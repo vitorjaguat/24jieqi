@@ -1,5 +1,6 @@
 import { Solar, Lunar } from 'lunar-javascript';
 import { useEffect, useState } from 'react';
+import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
 
 const DUMMY = {
   立春: {
@@ -24,6 +25,13 @@ export default function JieQi() {
   const [currentJieQi, setCurrentJieQi] = useState(null);
   const [prevSentence, setPrevSentence] = useState('');
   const [nextSentence, setNextSentence] = useState('');
+  //timezone -> China timezone helper:
+  //   const intlDateObj = new Intl.DateTimeFormat('en', {
+  //     timeZone: 'Asia/Shanghai',
+  //   });
+  //   const timezoneHelper = (date) => {
+  //     intlDateObj.format(date);
+  //   };
 
   const prevJieQiHelper = (date) => {
     const x = Lunar.fromDate(
@@ -32,8 +40,16 @@ export default function JieQi() {
     return x;
   };
 
+  const add3DayHelper = (date) => {
+    const dateCopy = new Date(date);
+    dateCopy.setDate(date.getDate() + 3);
+    return dateCopy;
+  };
+
   useEffect(() => {
-    setBaseDate(new Date());
+    setBaseDate(
+      new Date(Lunar.fromDate(new Date()).getPrevJieQi().getSolar().toYmd())
+    );
     setCurrentJieQi(Lunar.fromDate(new Date()).getPrevJieQi().getName());
     let prev = prevJieQiHelper(baseDate);
     setPrevSentence(prev.getName() + ' ' + prev.getSolar().toYmd());
@@ -41,11 +57,45 @@ export default function JieQi() {
     setNextSentence(next.getName() + ' ' + next.getSolar().toYmd());
   }, []);
 
-  //   let prev = today.next(-14).getPrevJieQi(); doesn't work properly!
+  const goToPrevJieQi = () => {
+    setBaseDate(
+      new Date(Lunar.fromDate(baseDate).getPrevJieQi().getSolar().toYmd())
+    );
+    setCurrentJieQi(Lunar.fromDate(baseDate).getPrevJieQi().getName());
+  };
+
+  const goToNextJieQi = () => {
+    setBaseDate(
+      new Date(
+        Lunar.fromDate(add3DayHelper(baseDate))
+          .getNextJieQi()
+          .getSolar()
+          .toYmd()
+      )
+    );
+    setCurrentJieQi(
+      Lunar.fromDate(add3DayHelper(baseDate)).getNextJieQi().getName()
+    );
+  };
+
+  useEffect(() => {
+    let prev = prevJieQiHelper(add3DayHelper(baseDate));
+    setPrevSentence(prev.getName() + ' ' + prev.getSolar().toYmd());
+    let next = Lunar.fromDate(add3DayHelper(baseDate)).getNextJieQi();
+    setNextSentence(next.getName() + ' ' + next.getSolar().toYmd());
+    console.log(baseDate);
+  }, [baseDate]);
 
   return (
-    <div className='w-screen h-screen'>
-      <div className='h-full mx-12 bg-green-200 grid grid-cols-5'>
+    <div className='w-screen h-screen flex justify-center items-center'>
+      <div
+        className='h-screen w-[4%] flex items-center bg-slate-400'
+        onClick={() => goToPrevJieQi()}
+      >
+        <BiSkipPrevious size={30} />
+      </div>
+
+      <div className='w-full h-full bg-green-200 grid grid-cols-5'>
         <div className='col-span-3'>
           <div className=''>{currentJieQi}</div>
         </div>
@@ -58,6 +108,13 @@ export default function JieQi() {
             <p>{nextSentence}</p>
           </div>
         </div>
+      </div>
+
+      <div
+        className='h-screen w-[4%] flex items-center bg-slate-400'
+        onClick={() => goToNextJieQi()}
+      >
+        <BiSkipNext size={30} />
       </div>
     </div>
   );
