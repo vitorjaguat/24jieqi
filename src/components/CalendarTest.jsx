@@ -1,4 +1,3 @@
-import solarLunar from 'solarLunar';
 import { Solar, Lunar } from 'lunar-javascript';
 
 export default function CalendarTest() {

@@ -83,8 +83,10 @@ export default function JieQi() {
     setPrevSentence(prev.getName() + ' ' + prev.getSolar().toYmd());
     let next = Lunar.fromDate(add3DayHelper(baseDate)).getNextJieQi();
     setNextSentence(next.getName() + ' ' + next.getSolar().toYmd());
-    console.log(baseDate);
+    // console.log(baseDate);
   }, [baseDate]);
+
+  //   console.log(currentJieQi.getName());
 
   return (
     <div className='w-screen h-screen flex justify-center items-center'>
@@ -98,6 +100,7 @@ export default function JieQi() {
       <div className='w-full h-full bg-green-200 grid grid-cols-5'>
         <div className='col-span-3'>
           <div className=''>{currentJieQi}</div>
+          <div>{}</div>
         </div>
 
         <div className='col-span-2'>
