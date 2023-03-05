@@ -3,6 +3,7 @@ import Link from 'next/link';
 import { useEffect, useState } from 'react';
 import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
 import { GiFlowerPot } from 'react-icons/gi';
+import { GrPrevious, GrNext } from 'react-icons/gr';
 
 const DUMMY = {
   立春: {
@@ -101,10 +102,10 @@ export default function JieQi() {
         className='h-screen w-[4%] flex justify-center items-center bg-slate-400 cursor-pointer'
         onClick={() => goToPrevJieQi()}
       >
-        <BiSkipPrevious size={30} />
+        <GrPrevious size={25} />
       </div>
 
-      <div className='w-full h-screen flex flex-col justify-start'>
+      <div className='w-full h-screen flex flex-col'>
         <div className='w-full h-[45%] grid grid-cols-5'>
           <div className='col-span-3 flex justify-center items-center'>
             <p className='text-[210px] ml-[-200px] font-mashanzhang'>
@@ -125,20 +126,30 @@ export default function JieQi() {
         <div className='w-full h-[55%] grid grid-cols-3'>
           <div className='col-span-1 flex justify-center items-center'>
             <div className='flex justify-center items-center'>
-              <p style={{ writingMode: 'vertical-rl' }}>床前明月光</p>
-              <p style={{ writingMode: 'vertical-rl' }}>疑是地上霜</p>
+              <p
+                className='font-mashanzhang text-xl'
+                style={{ writingMode: 'vertical-rl' }}
+              >
+                床前明月光
+              </p>
+              <p
+                className='font-mashanzhang text-xl'
+                style={{ writingMode: 'vertical-rl' }}
+              >
+                疑是地上霜
+              </p>
               <p>(poema)</p>
             </div>
           </div>
 
           <div className='col-span-1 flex justify-center items-center'>
             <div className='flex justify-center items-center'>
-              <GiFlowerPot size={250} color='grey' />
+              <GiFlowerPot size={300} color='grey' opacity={0.2} />
             </div>
           </div>
 
           <div className='col-span-1'>
-            <p className='p-6'>
+            <div className='p-6'>
               Lorem ipsum dolor, sit amet consectetur adipisicing elit. At quod
               veniam necessitatibus accusamus harum doloribus ad, deleniti
               maiores, ducimus perferendis dolores minus tempora est! Esse ullam
@@ -150,7 +161,7 @@ export default function JieQi() {
               <div className='text-end'>
                 <Link href={'#'}>...leia mais</Link>
               </div>
-            </p>
+            </div>
           </div>
         </div>
       </div>
@@ -160,7 +171,7 @@ export default function JieQi() {
         className='h-screen w-[4%] flex justify-center items-center bg-slate-400 cursor-pointer'
         onClick={() => goToNextJieQi()}
       >
-        <BiSkipNext size={30} />
+        <GrNext size={25} />
       </div>
     </div>
   );
