@@ -18,7 +18,9 @@ export default function Home() {
       </Head>
       {/* <CalendarTest /> */}
       {/* <JieQi /> */}
+      {/* <main className='w-screen flex flex-col justify-center items-center'> */}
       <JieQi_ />
+      {/* </main> */}
     </>
   );
 }

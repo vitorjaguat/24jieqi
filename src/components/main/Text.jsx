@@ -3,8 +3,8 @@ import Link from 'next/link';
 export default function Text() {
   return (
     <div className='w-full bg-green-100 py-20'>
-      <div className='max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
-        <div className='p-6'>
+      <div className='w-[90%] md:max-w-[700px] mx-auto py-20 md:px-20 bg-[#00000010] rounded-xl'>
+        <div className='py-6 px-2 md:px-6'>
           <p className='pb-4'>
             Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, id?
             Omnis doloremque, eos, qui soluta totam inventore officia sapiente

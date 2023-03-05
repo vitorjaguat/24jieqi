@@ -4,7 +4,7 @@ import { useEffect, useState } from 'react';
 import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
 import { GiFlowerPot } from 'react-icons/gi';
 import { GrPrevious, GrNext } from 'react-icons/gr';
-import Image from './Image';
+import Imagem from './Imagem';
 import Main from './Main';
 import Poem from './Poem';
 import Text from './Text';
@@ -100,11 +100,11 @@ export default function JieQi_() {
   //   console.log(currentJieQi.getName());
 
   return (
-    <div>
-      <div className='w-screen flex justify-center bg-green-200'>
+    <div className='w-screen'>
+      <div className='w-screen bg-green-200'>
         {/* skip previous2 */}
         <div
-          className='fixed h-screen w-[4%] top-[48%] left-[2%] cursor-pointer'
+          className='fixed w-[4%] top-[48%] left-[2%] flex cursor-pointer'
           onClick={() => goToPrevJieQi()}
         >
           <GrPrevious size={25} />
@@ -116,17 +116,24 @@ export default function JieQi_() {
           nextSentence={nextSentence}
         />
 
+        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
+          <div className='md:w-full md:col-span-3'>
+            <Text />
+          </div>
+          <div className='md:w-full md:col-span-2'>
+            <Imagem />
+          </div>
+        </div>
+        <Poem />
+
         {/* skip next2 */}
         <div
-          className='fixed h-screen w-[4%] top-[48%] right-[2%] flex justify-center cursor-pointer'
+          className='fixed w-[4%] top-[48%] right-[2%] cursor-pointer flex justify-end'
           onClick={() => goToNextJieQi()}
         >
           <GrNext size={25} />
         </div>
       </div>
-
-      <Text />
-      <Poem />
     </div>
   );
 }

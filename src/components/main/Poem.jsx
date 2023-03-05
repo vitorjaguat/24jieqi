@@ -1,6 +1,6 @@
 export default function Poem() {
   return (
-    <div className='w-full bg-green-100 py-20'>
+    <div className='w-full bg-green-300 py-20'>
       <div className='max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
         <div className='flex justify-center items-center p-6'>
           <p
