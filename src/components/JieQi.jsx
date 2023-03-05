@@ -4,6 +4,7 @@ import { useEffect, useState } from 'react';
 import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
 import { GiFlowerPot } from 'react-icons/gi';
 import { GrPrevious, GrNext } from 'react-icons/gr';
+import Text from './main/Text';
 
 const DUMMY = {
   立春: {
@@ -106,11 +107,11 @@ export default function JieQi() {
       </div>
 
       <div className='w-full h-screen flex flex-col'>
-        <div className='w-full h-[45%] grid grid-cols-5'>
+        <div className='w-full h-[45%] grid grid-cols-5 relative'>
+          <div className=' h-[90%] absolute top-[10%] left-[10%] bottom-[10%] right-[10%] opacity-20 bg-green-800'></div>
+
           <div className='col-span-3 flex justify-center items-center'>
-            <p className='text-[210px] ml-[-200px] font-mashanzhang'>
-              {currentJieQi}
-            </p>
+            <p className='text-[210px] font-mashanzhang'>{currentJieQi}</p>
           </div>
 
           <div className='col-span-2 text-center flex justify-center items-center'>

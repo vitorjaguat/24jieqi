@@ -1,10 +1,11 @@
 import Head from 'next/head';
-import Image from 'next/image';
-import { Inter } from '@next/font/google';
+// import Image from 'next/image';
+// import { Inter } from '@next/font/google';
 import CalendarTest from '@/components/CalendarTest';
 import JieQi from '@/components/JieQi';
+import JieQi_ from '@/components/main/JieQi_';
 
-const inter = Inter({ subsets: ['latin'] });
+// const inter = Inter({ subsets: ['latin'] });
 
 export default function Home() {
   return (
@@ -16,7 +17,8 @@ export default function Home() {
         <link rel='icon' href='/favicon.ico' />
       </Head>
       {/* <CalendarTest /> */}
-      <JieQi />
+      {/* <JieQi /> */}
+      <JieQi_ />
     </>
   );
 }
