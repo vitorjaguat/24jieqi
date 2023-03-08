@@ -50,23 +50,23 @@ export default function Navbar() {
           <ul className='hidden md:flex'>
             <Link href='/#home' scroll={false}>
               <li className='text-sm uppercase hover:border-b '>
-                {/* {t('navbar.home')} */}início
+                {t('navbar.home')}
               </li>
             </Link>
             <Link href='/all' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
-                {/* {t('navbar.about')} */}os termos solares
+                {t('navbar.solar-terms')}
               </li>
             </Link>
             <Link href='/current' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
-                {/* {t('navbar.skills')} */}termo atual
+                {t('navbar.current-term')}
               </li>
             </Link>
 
             <Link href='/about' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
-                {/* {t('navbar.contact')} */}sobre este site
+                {t('navbar.about')}
               </li>
             </Link>
           </ul>
