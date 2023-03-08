@@ -1,6 +1,8 @@
 import { useRouter } from 'next/router';
 import { Ma_Shan_Zheng } from '@next/font/google';
 import '@/styles/globals.css';
+import Navbar from '@/components/Navbar';
+import { appWithTranslation } from 'next-i18next';
 
 const mashanzhang = Ma_Shan_Zheng({
   subsets: ['latin'],
@@ -9,12 +11,15 @@ const mashanzhang = Ma_Shan_Zheng({
   display: 'swap',
 });
 
-export default function App({ Component, pageProps }) {
+const App = ({ Component, pageProps }) => {
   const router = useRouter();
 
   return (
     <main className={`${mashanzhang.variable}`}>
+      <Navbar />
       <Component {...pageProps} key={router.asPath} />
     </main>
   );
-}
+};
+
+export default appWithTranslation(App);
