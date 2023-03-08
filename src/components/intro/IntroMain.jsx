@@ -1,7 +1,9 @@
+// import mainImg from '../../../public/mainImg.svg';
+
 export default function Main({ currentJieQi, prevSentence, nextSentence }) {
   return (
-    <div className='w-screen h-screen flex justify-center items-center bg-green-200'>
-      <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col bg-[#00000020] rounded-xl'>
+    <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg.svg')] bg-no-repeat bg-cover ">
+      <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col rounded-xl'>
         <div className='w-full h-full grid grid-cols-4 relative'>
           {/* <div className='  absolute top-[10%] left-[5%] bottom-[10%] right-[5%] opacity-20 bg-green-800 rounded-xl'></div> */}
 

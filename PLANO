@@ -1,0 +1,23 @@
+Jieqi component:
+
+[jieqi, setJieqi] = useState(null)
+
+useEffect:
+descobre a data de hj: new Date()
+descobre o jieqi de hj
+
+
+
+Data jieqi + translations:
+pt -- title, text, poem, image, (dates)
+
+zh -- title, text, poem, image, (dates)
+
+en -- title, text, poem, image, (dates)
+
+* (dates) alimentado através do package, as datas variam
+
+
+2023-02-27
+useEffect:
+descobre a data de hoje
