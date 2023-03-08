@@ -15,7 +15,7 @@ export default function Main({ currentJieQi, prevSentence, nextSentence }) {
           </div>
 
           <div className='col-span-2 flex justify-center items-center'>
-            <p className='text-[100px] md:text-[210px] font-mashanzhang text-center'>
+            <p className='text-[60px] md:text-[180px] font-mashanzhang text-center'>
               24节气
             </p>
           </div>
