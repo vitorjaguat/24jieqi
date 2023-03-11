@@ -125,7 +125,7 @@ export default function Navbar() {
                 OS TERMOS SOLARES
               </li>
             </Link>
-            <Link href='/current' scroll={false}>
+            <Link href='/atual' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
                 TERMO ATUAL
               </li>
