@@ -1,6 +1,40 @@
-export default function Main({ currentJieQi, prevSentence, nextSentence }) {
+import { useTranslation } from 'next-i18next';
+import { useEffect, useState } from 'react';
+
+const DUMMYcolors = {
+  立春: ['#FFF799', '#FFEE6F', '#ECD452', '#B6A014'],
+  雨水: ['#F9D3E3', '#ECB0C1', '#DD7694', '#A76283'],
+  惊蛰: ['#BA5B49', '#A64036', '#9E2A22', '#7C191E'],
+};
+// const DUMMYcolors = {
+//   立春: '#FFF799',
+//   雨水: '#F9D3E3',
+//   惊蛰: '#BA5B49',
+// };
+
+export default function Main({
+  currentJieQi,
+  prevSentence,
+  nextSentence,
+  current,
+}) {
+  const { t } = useTranslation('terms');
+
+  const [bgColor, setBgColor] = useState('bg-red-300');
+  useEffect(() => {
+    setBgColor((prev) => {
+      return t(`${current}.colors.one.hex`);
+    });
+  }, [current]);
+
+  console.log(t(`${current}.colors.one.hex`));
+
   return (
-    <div className='w-screen h-screen flex justify-center items-center bg-green-200'>
+    <div
+      className={'w-screen h-screen flex justify-center items-center '}
+      // style={{ backgroundColor: DUMMYcolors[current][1] }}
+      style={{ backgroundColor: bgColor }}
+    >
       <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col bg-[#00000020] rounded-xl'>
         <div className='w-full h-full grid grid-cols-4 relative'>
           {/* <div className='  absolute top-[10%] left-[5%] bottom-[10%] right-[5%] opacity-20 bg-green-800 rounded-xl'></div> */}

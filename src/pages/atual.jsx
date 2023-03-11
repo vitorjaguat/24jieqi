@@ -36,8 +36,10 @@ export default function JieQi_() {
   const [currentJieQi, setCurrentJieQi] = useState(null);
   const [prevSentence, setPrevSentence] = useState('');
   const [nextSentence, setNextSentence] = useState('');
-
-  const [current, setCurrent] = useState(currentJieQi ? currentJieQi : null);
+  const [current, setCurrent] = useState(currentJieQi ? currentJieQi : '惊蛰');
+  useEffect(() => {
+    setCurrent((prev) => currentJieQi);
+  }, [currentJieQi]);
   //timezone -> China timezone helper:
   //   const intlDateObj = new Intl.DateTimeFormat('en', {
   //     timeZone: 'Asia/Shanghai',
@@ -107,7 +109,7 @@ export default function JieQi_() {
 
   return (
     <div className='w-screen'>
-      <div className='w-screen bg-green-200'>
+      <div className='w-screen'>
         {/* skip previous2 */}
         <div
           className='fixed w-[4%] top-[48%] left-[2%] flex cursor-pointer'
@@ -115,16 +117,17 @@ export default function JieQi_() {
         >
           <GrPrevious size={25} />
         </div>
-
+        {/* <p>{t(`${current}.colors.one.hex`)}</p> */}
         <Main
           currentJieQi={currentJieQi}
           prevSentence={prevSentence}
           nextSentence={nextSentence}
+          current={current}
         />
 
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
           <div className='md:w-full md:col-span-3'>
-            <Text currentJieQi={currentJieQi} />
+            <Text current={current} />
           </div>
           <div className='md:w-full md:col-span-2'>
             <Imagem />

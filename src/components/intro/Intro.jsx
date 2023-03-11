@@ -5,7 +5,7 @@ import { GrPrevious, GrNext } from 'react-icons/gr';
 import Imagem from '../main/Imagem';
 import IntroMain from './IntroMain';
 import Poem from '../main/Poem';
-import Text from '../main/Text';
+import IntroText from './IntroText';
 
 const DUMMY = {
   立春: {
@@ -104,7 +104,7 @@ export default function Intro() {
 
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
           <div className='md:w-full md:col-span-3'>
-            <Text />
+            <IntroText />
           </div>
           <div className='md:w-full md:col-span-2'>
             <Imagem />

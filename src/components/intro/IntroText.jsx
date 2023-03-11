@@ -9,9 +9,9 @@ export default function Text({ current }) {
     <div className='w-full bg-green-100 py-20'>
       <div className='w-[90%] md:max-w-[700px] mx-auto py-20 md:px-20 bg-[#00000010] rounded-xl'>
         <div className='py-6 px-2 md:px-6'>
-          <p className='pb-4'>{t(`${current}.text.p1`)}</p>
-          <p className='pb-4'>{t(`${current}.text.p2`)}</p>
-          {/* <p className='pb-4'>
+          {/* <p className='pb-4'>{t(`${current}.text.p1`)}</p>
+          <p className='pb-4'>{t(`${current}.text.p2`)}</p> */}
+          <p className='pb-4'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius,
             maiores inventore assumenda voluptate repellendus sed iusto
             cupiditate, natus nisi repudiandae doloribus at corporis cumque
@@ -33,7 +33,7 @@ export default function Text({ current }) {
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam
             consequatur officia in nesciunt quo ad suscipit assumenda
             perferendis fuga a.
-          </p> */}
+          </p>
           {/* <div className='text-end'>
             <Link href={'#'}>...leia mais</Link>
           </div> */}
