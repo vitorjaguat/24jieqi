@@ -8,7 +8,7 @@ const mashanzhang = Ma_Shan_Zheng({
   subsets: ['latin'],
   weight: '400',
   variable: '--mashanzhang-font',
-  display: 'swap',
+  display: 'block',
 });
 
 const App = ({ Component, pageProps }) => {
