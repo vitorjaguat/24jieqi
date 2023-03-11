@@ -1,18 +1,13 @@
 import Link from 'next/link';
+import { useTranslation } from 'next-i18next';
 
-export default function Text() {
+export default function Text({ currentJieQi }) {
+  const { t } = useTranslation('terms');
   return (
     <div className='w-full bg-green-100 py-20'>
       <div className='w-[90%] md:max-w-[700px] mx-auto py-20 md:px-20 bg-[#00000010] rounded-xl'>
         <div className='py-6 px-2 md:px-6'>
-          <p className='pb-4'>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Earum, id?
-            Omnis doloremque, eos, qui soluta totam inventore officia sapiente
-            dolor labore voluptates, pariatur deleniti eum accusamus atque
-            reprehenderit in. Aliquid, odit quaerat beatae laboriosam hic, fugit
-            eius rem sunt molestiae quasi neque nemo temporibus architecto ea
-            quae numquam velit assumenda.
-          </p>
+          <p className='pb-4'>{t(`${currentJieQi}.text.p1`)}</p>
           <p className='pb-4'>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat
             temporibus ab officia sunt natus dolor commodi praesentium modi

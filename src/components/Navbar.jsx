@@ -1,10 +1,8 @@
 import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
-import { AiOutlineMail, AiOutlineMenu } from 'react-icons/ai';
+import { AiOutlineMenu } from 'react-icons/ai';
 import { GrFormClose } from 'react-icons/gr';
-import { FaGithub, FaInstagram, FaTelegramPlane } from 'react-icons/fa';
-// import { BsFillPersonLinesFill } from 'react-icons/bs';
 import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
 
@@ -58,7 +56,7 @@ export default function Navbar() {
                 {t('navbar.solar-terms')}
               </li>
             </Link>
-            <Link href='/current' scroll={false}>
+            <Link href='/atual' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.current-term')}
               </li>
