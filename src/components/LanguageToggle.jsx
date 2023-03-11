@@ -1,21 +1,22 @@
 import { useTranslation } from 'next-i18next';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
   const router = useRouter();
 
-  const handleLanguageChange = (locale) => {
-    i18n.changeLanguage(locale); //changing the language
-    router.push(
-      {
-        pathname: router.pathname,
-        query: router.query,
-      },
-      router.asPath,
-      { locale, scroll: false }
-    ); //redirect to the new language's path, eg, '/pt/#home'
-  };
+  // const handleLanguageChange = (locale) => {
+  //   i18n.changeLanguage(locale); //changing the language
+  //   router.push(
+  //     {
+  //       pathname: router.pathname,
+  //       query: router.query,
+  //     },
+  //     router.asPath,
+  //     { locale, scroll: false }
+  //   ); //redirect to the new language's path, eg, '/pt/#home'
+  // };
 
   //router.push(url, as, options)
   //url: the url to navigate to
@@ -27,24 +28,32 @@ const LanguageToggle = () => {
 
   return (
     <div className='flex justify-center text-orange-900 font-bold'>
-      <div
-        className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
-        onClick={() => handleLanguageChange('pt')}
-      >
-        PT
-      </div>
-      <div
-        className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
-        onClick={() => handleLanguageChange('zh')}
-      >
-        中
-      </div>
-      <div
-        className='text-sm cursor-pointer px-1 hover:border-b'
-        onClick={() => handleLanguageChange('en')}
-      >
-        EN
-      </div>
+      <Link href={router.pathname} locale='pt'>
+        <div
+          className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
+          // onClick={() => handleLanguageChange('pt')}
+        >
+          PT
+        </div>
+      </Link>
+
+      <Link href={router.pathname} locale='zh'>
+        <div
+          className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
+          // onClick={() => handleLanguageChange('zh')}
+        >
+          中
+        </div>
+      </Link>
+
+      <Link href={router.pathname} locale='en'>
+        <div
+          className='text-sm cursor-pointer px-1 hover:border-b'
+          // onClick={() => handleLanguageChange('en')}
+        >
+          EN
+        </div>
+      </Link>
     </div>
   );
 };
