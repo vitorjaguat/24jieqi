@@ -46,7 +46,10 @@ export default function Colors({ current }) {
 
         <div className='flex flex-col justify-center items-center p-6'>
           {hexArr.map((hex, i) => (
-            <div className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'>
+            <div
+              key={hex}
+              className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'
+            >
               <div
                 className='w-10 h-10 rounded-full'
                 style={{ backgroundColor: hex }}

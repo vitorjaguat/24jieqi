@@ -79,7 +79,7 @@ export default function Todos() {
 
         <div className='grid grid-flow-col grid-rows-6 p-6'>
           {jieqiArr.map((jieqi, i) => (
-            <Link href={`/todos/${jieqi}`}>
+            <Link key={jieqi} href={`/todos/${jieqi}`}>
               <div
                 className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] hover:scale-105 transition-all duration-300'
                 style={{
