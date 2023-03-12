@@ -10,6 +10,7 @@ import Poem from '../components/main/Poem';
 import Text from '../components/main/Text';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
+import Colors from '@/components/main/Colors';
 
 const DUMMY = {
   立春: {
@@ -133,6 +134,8 @@ export default function JieQi_() {
             <Imagem />
           </div>
         </div>
+
+        <Colors current={current} />
         <Poem />
 
         {/* skip next2 */}

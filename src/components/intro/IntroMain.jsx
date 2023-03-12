@@ -1,6 +1,10 @@
 // import mainImg from '../../../public/mainImg.svg';
 
-export default function Main({ currentJieQi, prevSentence, nextSentence }) {
+export default function IntroMain({
+  currentJieQi,
+  prevSentence,
+  nextSentence,
+}) {
   return (
     <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg.svg')] bg-no-repeat bg-cover ">
       <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col rounded-xl'>

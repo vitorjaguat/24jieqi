@@ -51,7 +51,7 @@ export default function Navbar() {
                 {t('navbar.home')}
               </li>
             </Link>
-            <Link href='/all' scroll={false}>
+            <Link href='/todos' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.solar-terms')}
               </li>
@@ -120,7 +120,7 @@ export default function Navbar() {
                 INÍCIO
               </li>
             </Link>
-            <Link href='/all' scroll={false}>
+            <Link href='/todos' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
                 OS TERMOS SOLARES
               </li>

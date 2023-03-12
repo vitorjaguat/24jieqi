@@ -18,12 +18,8 @@ export default function Home() {
         <meta name='viewport' content='width=device-width, initial-scale=1' />
         <link rel='icon' href='/favicon.ico' />
       </Head>
-      {/* <CalendarTest /> */}
-      {/* <JieQi /> */}
-      {/* <main className='w-screen flex flex-col justify-center items-center'> */}
-      {/* <JieQi_ /> */}
+
       <Intro />
-      {/* </main> */}
     </>
   );
 }
