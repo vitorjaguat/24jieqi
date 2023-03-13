@@ -5,6 +5,7 @@ import Link from 'next/link';
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
   const router = useRouter();
+  console.log(router.query);
 
   // const handleLanguageChange = (locale) => {
   //   i18n.changeLanguage(locale); //changing the language
@@ -28,7 +29,15 @@ const LanguageToggle = () => {
 
   return (
     <div className='flex justify-center text-orange-900 font-bold'>
-      <Link href={router.pathname} locale='pt'>
+      <Link
+        href={{
+          pathname: router.pathname,
+          query: {
+            jieqi: router.query.jieqi,
+          },
+        }}
+        locale='pt'
+      >
         <div
           className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('pt')}
@@ -37,7 +46,15 @@ const LanguageToggle = () => {
         </div>
       </Link>
 
-      <Link href={router.pathname} locale='zh'>
+      <Link
+        href={{
+          pathname: router.pathname,
+          query: {
+            jieqi: router.query.jieqi,
+          },
+        }}
+        locale='zh'
+      >
         <div
           className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('zh')}
@@ -46,7 +63,15 @@ const LanguageToggle = () => {
         </div>
       </Link>
 
-      <Link href={router.pathname} locale='en'>
+      <Link
+        href={{
+          pathname: router.pathname,
+          query: {
+            jieqi: router.query.jieqi,
+          },
+        }}
+        locale='en'
+      >
         <div
           className='text-sm cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('en')}

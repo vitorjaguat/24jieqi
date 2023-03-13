@@ -30,7 +30,47 @@ export default function TodosDetails({ jieqi }) {
   );
 }
 
-export async function getStaticPaths() {
+// export async function getStaticPaths() {
+//   const jieqiArr = [
+//     '立春',
+//     '雨水',
+//     '惊蛰',
+//     '春分',
+//     '清明',
+//     '谷雨',
+//     '立夏',
+//     '小满',
+//     '芒种',
+//     '夏至',
+//     '小暑',
+//     '大暑',
+//     '立秋',
+//     '处暑',
+//     '白露',
+//     '秋分',
+//     '寒露',
+//     '霜降',
+//     '立冬',
+//     '小雪',
+//     '大雪',
+//     '冬至',
+//     '小寒',
+//     '大寒',
+//   ];
+
+//   return {
+//     fallback: false,
+//     paths: jieqiArr.map((jieqi) => {
+//       return {
+//         params: {
+//           jieqi: jieqi,
+//         },
+//       };
+//     }),
+//   };
+// }
+
+export async function getStaticPaths({ locales }) {
   const jieqiArr = [
     '立春',
     '雨水',
@@ -58,25 +98,35 @@ export async function getStaticPaths() {
     '大寒',
   ];
 
-  return {
-    fallback: false,
-    paths: jieqiArr.map((jieqi) => {
+  const jieqiCategories = jieqiArr.map((jieqiName) => {
+    return { jieqi: jieqiName };
+  });
+
+  const paths = jieqiCategories.flatMap((jieqiCategory) => {
+    return locales.map((locale) => {
       return {
         params: {
-          jieqi: jieqi,
+          jieqi: jieqiCategory.jieqi,
         },
+        locale: locale,
       };
-    }),
+    });
+  });
+
+  return {
+    fallback: false,
+    paths: paths,
   };
 }
 
 export async function getStaticProps({ locale, params }) {
-  const { jieqi } = params;
+  // const { jieqi } = params;
 
   return {
     props: {
+      params: params,
+      jieqi: params.jieqi,
       ...(await serverSideTranslations(locale, ['common', 'terms'])),
-      jieqi,
     },
   };
 }

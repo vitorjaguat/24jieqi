@@ -39,7 +39,7 @@ export default function Main({ jieqi }) {
           </div> */}
 
           <div className='col-span-2 flex justify-center items-center'>
-            <p className='text-[100px] md:text-[210px] font-mashanzhang text-center'>
+            <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center'>
               {jieqi}
             </p>
           </div>

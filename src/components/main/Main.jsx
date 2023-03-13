@@ -27,12 +27,9 @@ export default function Main({
     });
   }, [current]);
 
-  console.log(t(`${current}.colors.1.hex`));
-
   return (
     <div
       className={'w-screen h-screen flex justify-center items-center '}
-      // style={{ backgroundColor: DUMMYcolors[current][1] }}
       style={{ backgroundColor: bgColor }}
     >
       <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col bg-[#00000020] rounded-xl'>
@@ -47,7 +44,7 @@ export default function Main({
           </div>
 
           <div className='col-span-2 flex justify-center items-center'>
-            <p className='text-[100px] md:text-[210px] font-mashanzhang text-center'>
+            <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center'>
               {currentJieQi}
             </p>
           </div>

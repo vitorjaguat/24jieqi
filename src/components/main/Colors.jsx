@@ -11,7 +11,7 @@ export default function Colors({ current }) {
     let hexData = [];
     let nameData = [];
 
-    for (let i = 1; i <= 4; i++) {
+    for (let i = 1; i <= 16; i++) {
       let hex = t(`${current}.colors.${i}.hex`);
       let name = t(`${current}.colors.${i}.name`);
       hexData.push(hex);
@@ -47,7 +47,7 @@ export default function Colors({ current }) {
         <div className='flex flex-col justify-center items-center p-6'>
           {hexArr.map((hex, i) => (
             <div
-              key={hex}
+              key={i}
               className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'
             >
               <div
