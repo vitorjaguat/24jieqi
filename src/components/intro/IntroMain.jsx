@@ -19,7 +19,7 @@ export default function IntroMain({
           </div>
 
           <div className='col-span-2 flex justify-center items-center'>
-            <p className='text-[60px] md:text-[180px] font-mashanzhang text-center'>
+            <p className='text-[80px] md:text-[140px] lg:text-[160px] font-mashanzhang text-center'>
               24节气
             </p>
           </div>

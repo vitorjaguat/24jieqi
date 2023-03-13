@@ -7,7 +7,7 @@ import Poem from '@/components/main/Poem';
 import Colors from '@/components/main/Colors';
 
 export default function TodosDetails({ jieqi }) {
-  console.log(jieqi);
+  // console.log(jieqi);
   return (
     <div className='w-screen'>
       <div className='w-screen'>
@@ -20,7 +20,7 @@ export default function TodosDetails({ jieqi }) {
             <Text current={jieqi} />
           </div>
           <div className='md:w-full md:col-span-2'>
-            <Imagem />
+            <Imagem current={jieqi} />
           </div>
         </div>
 

@@ -12,24 +12,6 @@ import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Colors from '@/components/main/Colors';
 
-const DUMMY = {
-  立春: {
-    title: '立春',
-    poem: '立春poem',
-    text: '立春text',
-  },
-  雨水: {
-    title: '雨水',
-    poem: '雨水poem',
-    text: '雨水text',
-  },
-  惊蛰: {
-    title: '惊蛰',
-    poem: '惊蛰poem',
-    text: '惊蛰text',
-  },
-};
-
 export default function JieQi_() {
   const { t } = useTranslation('terms');
 

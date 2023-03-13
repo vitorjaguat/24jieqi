@@ -4,6 +4,7 @@ import { GiGinkgoLeaf } from 'react-icons/gi';
 
 export default function Colors({ current }) {
   const { t } = useTranslation('terms');
+  const { t: t1 } = useTranslation('common');
   const [hexArr, setHexArr] = useState([]);
   const [nameArr, setNameArr] = useState([]);
 
@@ -28,7 +29,7 @@ export default function Colors({ current }) {
       <div className='max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
         <div>
           <h1 className='text-5xl text-center pb-10 font-bold font-mashanzhang tracking-wider'>
-            Cores
+            {t1('colors.colors')}
           </h1>
           <p className='pb-4'>
             Na milenar tradição chinesa, a cada termo solar correspondem algumas

@@ -4,5 +4,8 @@
     "solar-terms": "termos solares",
     "current-term": "termo atual",
     "about": "sobre este site"
+  },
+  "colors": {
+    "colors": "Cores"
   }
 }

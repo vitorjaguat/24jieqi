@@ -4,5 +4,8 @@
     "solar-terms": "所有节气",
     "current-term": "当前节气",
     "about": "关于这个网站"
+  },
+  "colors": {
+    "colors": "颜色"
   }
 }

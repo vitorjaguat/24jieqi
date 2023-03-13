@@ -32,9 +32,11 @@ const LanguageToggle = () => {
       <Link
         href={{
           pathname: router.pathname,
-          query: {
-            jieqi: router.query.jieqi,
-          },
+          query: router.query.jieqi
+            ? {
+                jieqi: router.query.jieqi,
+              }
+            : {},
         }}
         locale='pt'
       >
@@ -49,9 +51,11 @@ const LanguageToggle = () => {
       <Link
         href={{
           pathname: router.pathname,
-          query: {
-            jieqi: router.query.jieqi,
-          },
+          query: router.query.jieqi
+            ? {
+                jieqi: router.query.jieqi,
+              }
+            : {},
         }}
         locale='zh'
       >
@@ -66,9 +70,11 @@ const LanguageToggle = () => {
       <Link
         href={{
           pathname: router.pathname,
-          query: {
-            jieqi: router.query.jieqi,
-          },
+          query: router.query.jieqi
+            ? {
+                jieqi: router.query.jieqi,
+              }
+            : {},
         }}
         locale='en'
       >

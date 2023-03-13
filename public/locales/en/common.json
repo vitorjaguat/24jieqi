@@ -4,5 +4,8 @@
     "solar-terms": "solar terms",
     "current-term": "current term",
     "about": "about this website"
+  },
+  "colors": {
+    "colors": "Colors"
   }
 }
