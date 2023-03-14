@@ -5,6 +5,7 @@ import Text from '@/components/main/Text';
 import Imagem from '@/components/main/Imagem';
 import Poem from '@/components/main/Poem';
 import Colors from '@/components/main/Colors';
+import BannerImage from '@/components/main/BannerImage';
 
 export default function TodosDetails({ jieqi }) {
   // console.log(jieqi);
@@ -25,6 +26,7 @@ export default function TodosDetails({ jieqi }) {
         </div>
 
         <Poem />
+        <BannerImage current={jieqi} />
       </div>
     </div>
   );

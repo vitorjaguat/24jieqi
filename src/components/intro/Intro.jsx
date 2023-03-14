@@ -6,37 +6,13 @@ import Imagem from '../main/Imagem';
 import IntroMain from './IntroMain';
 import Poem from '../main/Poem';
 import IntroText from './IntroText';
-
-const DUMMY = {
-  立春: {
-    title: '立春',
-    poem: '立春poem',
-    text: '立春text',
-  },
-  雨水: {
-    title: '雨水',
-    poem: '雨水poem',
-    text: '雨水text',
-  },
-  惊蛰: {
-    title: '惊蛰',
-    poem: '惊蛰poem',
-    text: '惊蛰text',
-  },
-};
+import BannerImage from '../main/BannerImage';
 
 export default function Intro() {
   const [baseDate, setBaseDate] = useState(null);
   const [currentJieQi, setCurrentJieQi] = useState(null);
   const [prevSentence, setPrevSentence] = useState('');
   const [nextSentence, setNextSentence] = useState('');
-  //timezone -> China timezone helper:
-  //   const intlDateObj = new Intl.DateTimeFormat('en', {
-  //     timeZone: 'Asia/Shanghai',
-  //   });
-  //   const timezoneHelper = (date) => {
-  //     intlDateObj.format(date);
-  //   };
 
   const prevJieQiHelper = (date) => {
     if (!date) return;
@@ -111,6 +87,7 @@ export default function Intro() {
           </div>
         </div>
         <Poem />
+        <BannerImage />
       </div>
     </div>
   );
