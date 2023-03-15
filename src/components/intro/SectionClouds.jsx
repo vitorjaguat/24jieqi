@@ -274,14 +274,17 @@ export default function SectionClouds({ current }) {
 
   return (
     <>
-      <div className='pt-[200px] bg-slate-200'>
-        <div className='flex justify-between w-[1240px] mx-auto'>
+      <div className='pt-[160px] bg-slate-200 overflow-hidden'>
+        <div className='flex flex-col md:flex-row justify-between md:w-[1240px] mx-auto'>
           <div
             className='w-full flex flex-col justify-center items-center pt-20 overflow-hidden mb-10'
             // style={{ backgroundColor: hexArr[4] }}
           >
             <div className='flex flex-col h-full w-full relative z-[0]'>
-              <div ref={parallax.ref} className='w-full h-full absolute z-[-1]'>
+              <div
+                ref={parallax.ref}
+                className='w-full h-full absolute z-[-1] overflow-visible pt-8 ml-[30vw] md:ml-0'
+              >
                 {svgSun}
               </div>
               {svg}
@@ -306,7 +309,7 @@ export default function SectionClouds({ current }) {
             </div>
           </div>
         </div>
-        <div className='w-full'>
+        <div className='w-[1000px] md:w-full'>
           <Wave
             fill='#99D0F7'
             paused={false}
