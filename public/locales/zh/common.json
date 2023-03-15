@@ -1,9 +1,9 @@
 {
   "navbar": {
     "home": "首页",
-    "solar-terms": "所有节气",
+    "solar-terms": "全部节气",
     "current-term": "当前节气",
-    "about": "关于这个网站"
+    "about": "关于本站"
   },
   "colors": {
     "colors": "颜色"

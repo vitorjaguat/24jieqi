@@ -35,7 +35,7 @@ export default function Navbar() {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-2'>
-        <Link href='/#home' scroll={false}>
+        <Link href='/' scroll={false}>
           {/* <Image
             src='/../public/assets/logoH2.png'
             alt='logo'
@@ -46,7 +46,7 @@ export default function Navbar() {
         </Link>
         <div className='hidden md:block'>
           <ul className='hidden md:flex'>
-            <Link href='/#home' scroll={false}>
+            <Link href='/' scroll={false}>
               <li className='text-sm uppercase hover:border-b '>
                 {t('navbar.home')}
               </li>
@@ -95,7 +95,7 @@ export default function Navbar() {
       >
         <div>
           <div className='flex w-full items-center justify-between'>
-            <Link href='/#home' scroll={false}>
+            <Link href='/' scroll={false}>
               {/* <Image
                   src='/../public/assets/logoH2.png'
                   width={60}
@@ -117,22 +117,22 @@ export default function Navbar() {
           <ul className='uppercase'>
             <Link href='/home' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                INÍCIO
+                {t('navbar.home')}
               </li>
             </Link>
             <Link href='/todos' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                OS TERMOS SOLARES
+                {t('navbar.solar-terms')}
               </li>
             </Link>
             <Link href='/atual' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                TERMO ATUAL
+                {t('navbar.current-term')}
               </li>
             </Link>
             <Link href='/about' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
-                SOBRE ESTE SITE
+                {t('navbar.about')}
               </li>
             </Link>
           </ul>
