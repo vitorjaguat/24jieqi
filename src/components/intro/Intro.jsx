@@ -7,6 +7,9 @@ import IntroMain from './IntroMain';
 import Poem from '../main/Poem';
 import IntroText from './IntroText';
 import BannerImage from '../main/BannerImage';
+import BannerClouds from './BannerClouds';
+import { ParallaxProvider } from 'react-scroll-parallax';
+import BannerClouds2 from './SectionClouds';
 
 export default function Intro() {
   const [baseDate, setBaseDate] = useState(null);
@@ -74,21 +77,25 @@ export default function Intro() {
   //   console.log(currentJieQi.getName());
 
   return (
-    <div className='w-screen'>
-      <div className='w-screen bg-green-200'>
-        <IntroMain />
+    <ParallaxProvider>
+      <div className='w-screen'>
+        <div className='w-screen bg-green-200'>
+          <IntroMain />
+          <BannerClouds2 />
 
-        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
-          <div className='md:w-full md:col-span-3'>
-            <IntroText />
+          <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
+            <div className='md:w-full md:col-span-3'>
+              <IntroText />
+            </div>
+            <div className='md:w-full md:col-span-2'>
+              <Imagem />
+            </div>
           </div>
-          <div className='md:w-full md:col-span-2'>
-            <Imagem />
-          </div>
+          <Poem />
+
+          <BannerImage />
         </div>
-        <Poem />
-        <BannerImage />
       </div>
-    </div>
+    </ParallaxProvider>
   );
 }
