@@ -5,6 +5,10 @@
     "current-term": "当前节气",
     "about": "关于本站"
   },
+  "main": {
+    "previous": "上一节气:",
+    "next": "下一节气:"
+  },
   "colors": {
     "colors": "颜色"
   }

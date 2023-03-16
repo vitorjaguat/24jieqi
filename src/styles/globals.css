@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+  scroll-behavior: smooth;
+}
+
 .colors-global {
   grid-template-rows: repeat(8, minmax(0, 1fr));
 }

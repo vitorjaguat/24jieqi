@@ -5,6 +5,10 @@
     "current-term": "current term",
     "about": "about this website"
   },
+  "main": {
+    "previous": "previous:",
+    "next": "next:"
+  },
   "colors": {
     "colors": "Colors"
   }

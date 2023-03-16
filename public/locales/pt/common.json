@@ -5,6 +5,10 @@
     "current-term": "termo atual",
     "about": "sobre este site"
   },
+  "main": {
+    "previous": "anterior:",
+    "next": "próximo:"
+  },
   "colors": {
     "colors": "Cores"
   }

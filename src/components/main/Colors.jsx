@@ -25,7 +25,7 @@ export default function Colors({ current }) {
   console.log(hexArr, nameArr);
 
   return (
-    <div className='w-full bg-slate-200 py-20'>
+    <div id='colors' className='w-full bg-slate-200 py-20'>
       <div className='max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
         <div>
           <h1 className='text-5xl text-center pb-10 font-bold font-mashanzhang tracking-wider'>

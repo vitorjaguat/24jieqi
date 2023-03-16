@@ -2,17 +2,6 @@ import { useTranslation } from 'next-i18next';
 import { useEffect, useState } from 'react';
 import ColorGrid from './ColorGrid';
 
-const DUMMYcolors = {
-  立春: ['#FFF799', '#FFEE6F', '#ECD452', '#B6A014'],
-  雨水: ['#F9D3E3', '#ECB0C1', '#DD7694', '#A76283'],
-  惊蛰: ['#BA5B49', '#A64036', '#9E2A22', '#7C191E'],
-};
-// const DUMMYcolors = {
-//   立春: '#FFF799',
-//   雨水: '#F9D3E3',
-//   惊蛰: '#BA5B49',
-// };
-
 export default function Main({
   currentJieQi,
   prevSentence,
@@ -20,6 +9,7 @@ export default function Main({
   current,
 }) {
   const { t } = useTranslation('terms');
+  const { t: t2 } = useTranslation('common');
 
   const [bgColor, setBgColor] = useState('bg-red-300');
   useEffect(() => {
@@ -42,7 +32,7 @@ export default function Main({
           </div>
 
           <div className='pl-2 md:pl-0 flex flex-col text-sm md:text-md'>
-            <p>节气 anterior:</p>
+            <p>{t2('main.previous')}</p>
             <p>{prevSentence}</p>
           </div>
         </div>
@@ -55,7 +45,7 @@ export default function Main({
 
         <div className='col-span-1 flex items-end justify-center pb-10'>
           <div className='pr-2 md:pr-0 flex flex-col justify-center items-end text-sm md:text-md'>
-            <p>próximo 节气:</p>
+            <p>{t2('main.next')}</p>
             <p>{nextSentence}</p>
           </div>
         </div>
