@@ -1,3 +1,13 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+.colors-global {
+  grid-template-rows: repeat(8, minmax(0, 1fr));
+}
+
+@media (min-width: 768px) {
+  .colors-global {
+    grid-template-rows: repeat(4, minmax(0, 1fr));
+  }
+}

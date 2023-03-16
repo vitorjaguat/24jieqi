@@ -8,6 +8,7 @@ import Imagem from './Imagem';
 import Main from './Main';
 import Poem from './Poem';
 import Text from './Text';
+import ColorGrid from './ColorGrid';
 
 export default function JieQi_() {
   const [baseDate, setBaseDate] = useState(null);
@@ -87,6 +88,8 @@ export default function JieQi_() {
           prevSentence={prevSentence}
           nextSentence={nextSentence}
         />
+
+        <ColorGrid />
 
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
           <div className='md:w-full md:col-span-3'>

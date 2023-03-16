@@ -11,6 +11,7 @@ import Text from '../components/main/Text';
 import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
 import { useTranslation } from 'next-i18next';
 import Colors from '@/components/main/Colors';
+import ColorGrid from '@/components/main/ColorGrid';
 
 export default function JieQi_() {
   const { t } = useTranslation('terms');
@@ -107,6 +108,8 @@ export default function JieQi_() {
           nextSentence={nextSentence}
           current={current}
         />
+
+        <ColorGrid current={current} />
 
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
           <div className='md:w-full md:col-span-3'>

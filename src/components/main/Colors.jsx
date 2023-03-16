@@ -45,18 +45,23 @@ export default function Colors({ current }) {
           </p>
         </div>
 
-        <div className='flex flex-col justify-center items-center p-6'>
+        <div
+          // style={{ gridTemplateRows: 'repeat(8, minmax(0, 1fr))' }}
+          className='colors-global grid grid-flow-col grid-rows-[8] md:grid-flow-row grid-cols-2 md:grid-cols-4 md:grid-rows-4 gap-2 items-center p-6'
+        >
           {hexArr.map((hex, i) => (
-            <div
-              key={i}
-              className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'
-            >
+            <div className='w-full flex justify-center'>
               <div
-                className='w-10 h-10 rounded-full'
-                style={{ backgroundColor: hex }}
-              />
-              <div>
-                <p className='ml-4'>{nameArr[i]}</p>
+                key={i}
+                className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'
+              >
+                <div
+                  className='w-10 h-10 rounded-full'
+                  style={{ backgroundColor: hex }}
+                />
+                <div>
+                  <p className='ml-4'>{nameArr[i]}</p>
+                </div>
               </div>
             </div>
           ))}
