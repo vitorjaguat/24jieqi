@@ -30,7 +30,7 @@ export default function ColorGrid({ current }) {
       <Link href='#colors' scroll={false}>
         <div className='grid grid-cols-4 w-fit'>
           {hexArr.map((hex, i) => (
-            <div className='w-5 h-5' style={{ backgroundColor: hex }} />
+            <div key={i} className='w-5 h-5' style={{ backgroundColor: hex }} />
           ))}
         </div>
       </Link>
