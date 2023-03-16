@@ -50,11 +50,8 @@ export default function Colors({ current }) {
           className='colors-global grid grid-flow-col grid-rows-[8] md:grid-flow-row grid-cols-2 md:grid-cols-4 md:grid-rows-4 gap-2 items-center p-6'
         >
           {hexArr.map((hex, i) => (
-            <div className='w-full flex justify-center'>
-              <div
-                key={i}
-                className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'
-              >
+            <div key={i} className='w-full flex justify-center'>
+              <div className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'>
                 <div
                   className='w-10 h-10 rounded-full'
                   style={{ backgroundColor: hex }}
