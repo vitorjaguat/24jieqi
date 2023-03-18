@@ -14,7 +14,7 @@ const mashanzhang = Ma_Shan_Zheng({
 
 const bonanova = Bona_Nova({
   subsets: ['latin'],
-  weight: '400',
+  weight: ['400', '700'],
   variable: '--bonanova-font',
   display: 'block',
 });

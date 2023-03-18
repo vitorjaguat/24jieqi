@@ -39,9 +39,10 @@ const LanguageToggle = () => {
             : {},
         }}
         locale='pt'
+        scroll={false}
       >
         <div
-          className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
+          className='mr-1 text-xs font-bold cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('pt')}
         >
           PT
@@ -58,9 +59,10 @@ const LanguageToggle = () => {
             : {},
         }}
         locale='zh'
+        scroll={false}
       >
         <div
-          className='mr-1 font-thin text-sm cursor-pointer px-1 hover:border-b'
+          className='mr-1 font-thin text-xs cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('zh')}
         >
           中
@@ -77,9 +79,10 @@ const LanguageToggle = () => {
             : {},
         }}
         locale='en'
+        scroll={false}
       >
         <div
-          className='text-sm cursor-pointer px-1 hover:border-b'
+          className='text-xs cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('en')}
         >
           EN

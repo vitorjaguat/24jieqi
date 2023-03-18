@@ -83,7 +83,9 @@ export default function Intro() {
           <IntroMain />
           <BannerClouds2 />
 
-          <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
+          <IntroText />
+
+          {/* <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
             <div className='md:w-full md:col-span-3'>
               <IntroText />
             </div>
@@ -91,7 +93,8 @@ export default function Intro() {
               <Imagem />
             </div>
           </div>
-          <Poem />
+
+          <Poem /> */}
 
           <BannerImage current='雨水' />
         </div>

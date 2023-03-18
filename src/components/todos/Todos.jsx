@@ -55,11 +55,11 @@ export default function Todos() {
     return t(`${jieqi}.colors.1.hex`);
   });
 
-  console.log(colorsArr);
+  // console.log(colorsArr);
 
   return (
-    <div className='w-full bg-slate-200 py-16'>
-      <div className='max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
+    <div className='w-screen bg-slate-200 py-16'>
+      <div className='w-full md:max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
         <div>
           <h1 className='text-5xl text-center pb-10 font-bold font-mashanzhang tracking-wider'>
             Os 24 Termos Solares
@@ -77,7 +77,7 @@ export default function Todos() {
           </p> */}
         </div>
 
-        <div className='grid grid-flow-col grid-rows-6 p-6'>
+        <div className='flex flex-col md:grid md:grid-flow-col md:grid-rows-6 p-6'>
           {jieqiArr.map((jieqi, i) => (
             <Link key={jieqi} href={`/todos/${jieqi}`}>
               <div

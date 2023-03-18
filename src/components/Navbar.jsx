@@ -2,7 +2,7 @@ import Image from 'next/image';
 import { useState, useEffect } from 'react';
 import Link from 'next/link';
 import { AiOutlineMenu } from 'react-icons/ai';
-import { GrFormClose } from 'react-icons/gr';
+import { TfiClose } from 'react-icons/tfi';
 import { useTranslation } from 'next-i18next';
 import LanguageToggle from './LanguageToggle';
 
@@ -30,7 +30,7 @@ export default function Navbar() {
     <div
       className={
         shadow
-          ? 'fixed w-screen h-16 shadow-md ease-in z-10 duration-300 bg-[#FFFFFF97]'
+          ? 'fixed w-screen h-16 shadow-md ease-in z-10 duration-300 bg-[#FFFFFF99]'
           : 'fixed z-10 w-screen h-16 ease-in duration-200'
       }
     >
@@ -84,6 +84,7 @@ export default function Navbar() {
             ? 'fixed md:hidden left-0 top-0 w-full h-full bg-black/70 ease-in transition-all duration-500'
             : 'fixed left-0 top-0 opacity-0 w-full h-full bg-transparent hidden ease-in transition-all duration-500'
         }
+        onClick={() => setNav(false)}
       />
       {/* sidebar */}
       <div
@@ -102,13 +103,13 @@ export default function Navbar() {
                   height={35}
                   alt='logo'
                 /> */}
-              <p className='font-bold'>24节气</p>
+              <p className='font-bold'></p>
             </Link>
             <div
               onClick={handleNav}
-              className='rounded-full text-orange-700 border-orange-300 border-2 border-dashed shadow-sm p-2 cursor-pointer'
+              className='rounded-full cursor-pointer mt-[-10px] mr-[-10px]'
             >
-              <GrFormClose size={20} />
+              <TfiClose size={20} />
             </div>
           </div>
         </div>
@@ -139,6 +140,7 @@ export default function Navbar() {
         </div>
 
         <div className=''>
+          24节气
           {/* <p className='uppercase text-sm tracking-widest text-orange-700'>
             JOIN ME AT
           </p>

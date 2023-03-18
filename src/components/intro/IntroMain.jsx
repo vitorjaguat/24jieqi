@@ -6,7 +6,7 @@ export default function IntroMain({
   nextSentence,
 }) {
   return (
-    <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg.svg')] bg-no-repeat bg-cover ">
+    <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg2.svg')] bg-no-repeat bg-cover ">
       <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col rounded-xl overflow-hidden'>
         <div className='w-full h-full grid grid-cols-3 pt-10'>
           <div
