@@ -11,5 +11,8 @@
   },
   "colors": {
     "colors": "Colors"
+  },
+  "poem": {
+    "poem": "Poem"
   }
 }

@@ -11,5 +11,8 @@
   },
   "colors": {
     "colors": "颜色"
+  },
+  "poem": {
+    "poem": "诗歌"
   }
 }
