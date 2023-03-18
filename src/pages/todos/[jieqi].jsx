@@ -26,7 +26,7 @@ export default function TodosDetails({ jieqi }) {
 
         <Colors current={jieqi} />
 
-        <Poem />
+        <Poem current={jieqi} />
         <DividerLeaf current={jieqi} />
       </div>
     </div>
