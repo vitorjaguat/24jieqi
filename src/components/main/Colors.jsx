@@ -47,7 +47,7 @@ export default function Colors({ current }) {
 
         <div
           // style={{ gridTemplateRows: 'repeat(8, minmax(0, 1fr))' }}
-          className='colors-global grid grid-flow-col grid-rows-[8] md:grid-flow-row grid-cols-2 md:grid-cols-4 md:grid-rows-4 gap-2 items-center p-6'
+          className='colors-global sm:grid sm:grid-flow-col sm:grid-rows-[8] md:grid-flow-row sm:grid-cols-2 md:grid-cols-4 md:grid-rows-4 gap-2 items-center p-6 pt-12'
         >
           {hexArr.map((hex, i) => (
             <div key={i} className='w-full flex justify-center'>

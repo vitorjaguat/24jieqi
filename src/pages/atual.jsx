@@ -108,12 +108,12 @@ export default function JieQi_() {
           current={current}
         />
 
-        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
-          <div className='md:w-full md:col-span-3'>
+        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
+          <div className='md:w-full md:col-span-3 flex justify-center items-center'>
             <Text current={current} />
           </div>
-          <div className='md:w-full md:col-span-2'>
-            <Imagem />
+          <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>
+            <Imagem current={current} />
           </div>
         </div>
 

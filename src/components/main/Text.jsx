@@ -6,11 +6,11 @@ export default function Text({ current }) {
   const { t } = useTranslation('terms');
 
   return (
-    <div className='w-full h-full bg-green-100 py-10'>
-      <div className='p-6 md:max-w-[700px] mx-auto md:px-20 bg-[#00000010] rounded-xl'>
+    <div className='w-full h-full bg-green-100 '>
+      <div className='p-6 py-20 md:max-w-[700px] mx-auto md:px-20 bg-gradient-to-b md:bg-gradient-to-r from-[#00000020] to-transparent'>
         <div className=''>
           <p className='pb-4'>{t(`${current}.text.p1`)}</p>
-          <p className='pb-4'>{t(`${current}.text.p2`)}</p>
+          <p className=''>{t(`${current}.text.p2`)}</p>
           {/* <p className='pb-4'>
             Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eius,
             maiores inventore assumenda voluptate repellendus sed iusto
