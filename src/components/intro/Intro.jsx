@@ -93,7 +93,7 @@ export default function Intro() {
           </div>
           <Poem />
 
-          <BannerImage />
+          <BannerImage current='雨水' />
         </div>
       </div>
     </ParallaxProvider>

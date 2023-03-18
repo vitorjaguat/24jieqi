@@ -60,7 +60,7 @@ const LanguageToggle = () => {
         locale='zh'
       >
         <div
-          className='mr-1 text-sm cursor-pointer px-1 hover:border-b'
+          className='mr-1 font-thin text-sm cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('zh')}
         >
           中

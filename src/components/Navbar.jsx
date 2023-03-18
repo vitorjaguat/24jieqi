@@ -30,7 +30,7 @@ export default function Navbar() {
     <div
       className={
         shadow
-          ? 'fixed w-screen h-16 shadow-md ease-in z-10 duration-300 bg-[#FFF7ED99]'
+          ? 'fixed w-screen h-16 shadow-md ease-in z-10 duration-300 bg-[#FFFFFF97]'
           : 'fixed z-10 w-screen h-16 ease-in duration-200'
       }
     >

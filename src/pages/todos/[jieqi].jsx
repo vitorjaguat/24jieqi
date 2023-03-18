@@ -6,6 +6,7 @@ import Imagem from '@/components/main/Imagem';
 import Poem from '@/components/main/Poem';
 import Colors from '@/components/main/Colors';
 import BannerImage from '@/components/main/BannerImage';
+import DividerLeaf from '@/components/main/DividerLeaf';
 
 export default function TodosDetails({ jieqi }) {
   // console.log(jieqi);
@@ -16,17 +17,17 @@ export default function TodosDetails({ jieqi }) {
 
         <Colors current={jieqi} />
 
-        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
-          <div className='md:w-full md:col-span-3'>
+        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
+          <div className='md:w-full md:col-span-3 flex justify-center items-center'>
             <Text current={jieqi} />
           </div>
-          <div className='md:w-full md:col-span-2'>
+          <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>
             <Imagem current={jieqi} />
           </div>
         </div>
 
         <Poem />
-        <BannerImage current={jieqi} />
+        <DividerLeaf current={jieqi} />
       </div>
     </div>
   );

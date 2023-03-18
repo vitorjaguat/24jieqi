@@ -23,7 +23,7 @@ export default function Main({
       className={'w-screen h-screen flex justify-center items-center '}
       style={{ backgroundColor: bgColor }}
     >
-      <div className='w-[90%] md:max-w-[1200px] h-[80%] flex-col bg-[#00000020] rounded-xl grid grid-cols-4'>
+      <div className='w-full md:max-w-[1200px] h-[80%] flex-col bg-[#00000020] grid grid-cols-4'>
         {/* <div className='  absolute top-[10%] left-[5%] bottom-[10%] right-[5%] opacity-20 bg-green-800 rounded-xl'></div> */}
 
         <div className='col-span-1 flex flex-col items-center justify-between py-10'>

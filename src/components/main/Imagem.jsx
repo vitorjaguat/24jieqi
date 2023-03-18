@@ -1,6 +1,7 @@
 import { GiFlowerPot } from 'react-icons/gi';
 import { useState, useEffect } from 'react';
 import { useTranslation } from 'next-i18next';
+import Image from 'next/image';
 
 export default function Imagem({ current }) {
   const { t } = useTranslation('terms');
@@ -22,11 +23,20 @@ export default function Imagem({ current }) {
   }, [current, setHexArr, setNameArr]);
 
   return (
-    <div className='md:w-full md:h-[70%] bg-green-100 flex justify-center items-center p-20 md:pl-0'>
-      <div className='w-full h-full flex justify-center items-center bg-[#00000010] rounded-xl'>
+    <div className='md:w-full md:h-[70%] bg-green-100 flex justify-center items-center px-10 pb-10 md:p-20 md:pl-0 overflow-hidden'>
+      <div className='w-full h-full flex justify-center items-center'>
+        <img
+          src={`/img/${current}.svg`}
+          width={800}
+          height={600}
+          alt={current}
+          color={'red'}
+          style={{ fill: 'blue', stroke: 'green' }}
+        />
+
         {/* <GiFlowerPot size={300} color='grey' opacity={0.2} /> */}
 
-        <svg
+        {/* <svg
           stroke-miterlimit='10'
           style={{
             fillRule: 'nonzero',
@@ -166,7 +176,7 @@ export default function Imagem({ current }) {
               />
             </g>
           </g>
-        </svg>
+        </svg> */}
       </div>
     </div>
   );
