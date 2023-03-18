@@ -118,7 +118,7 @@ export default function JieQi_() {
         </div>
 
         <Colors current={current} />
-        <Poem />
+        <Poem current={current} />
 
         {/* skip next2 */}
         <div
