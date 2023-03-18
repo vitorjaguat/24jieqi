@@ -15,8 +15,6 @@ export default function TodosDetails({ jieqi }) {
       <div className='w-screen'>
         <Main jieqi={jieqi} />
 
-        <Colors current={jieqi} />
-
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
           <div className='md:w-full md:col-span-3 flex justify-center items-center'>
             <Text current={jieqi} />
@@ -25,6 +23,8 @@ export default function TodosDetails({ jieqi }) {
             <Imagem current={jieqi} />
           </div>
         </div>
+
+        <Colors current={jieqi} />
 
         <Poem />
         <DividerLeaf current={jieqi} />

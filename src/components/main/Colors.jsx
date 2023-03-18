@@ -32,16 +32,16 @@ export default function Colors({ current }) {
             {t1('colors.colors')}
           </h1>
           <p className='pb-4'>
-            Na milenar tradição chinesa, a cada termo solar correspondem algumas
-            cores. A associação dessas cores aos termos solares tem raízes na
+            Na cultura chinesa, cada termo solar é associado a um grupo de
+            cores. A vinculação dessas cores aos termos solares tem origens na
             História da Arte Chinesa.
           </p>
           <p>
             Há milênios, pintores chineses, assim como os poetas, vêm tomando os
-            termos solares como temas principais ou elementos de suas
-            representações artísticas. E, no caso dos pintores e outros
-            criadores de imagens, estas são as cores tradicionalmente mais
-            usadas nas representações do termo solar {current}:
+            termos solares como assuntos de suas representações artísticas, seja
+            enquanto temas principais ou elementos secundários. Aqui estão
+            listadas as cores tradicionalmente mais usadas na representação do
+            termo solar {current} pelos pintores e outros criadores de imagens.
           </p>
         </div>
 
