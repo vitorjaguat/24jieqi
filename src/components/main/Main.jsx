@@ -37,10 +37,22 @@ export default function Main({
           </div>
         </div>
 
-        <div className='col-span-2 flex justify-center items-center'>
+        <div className='col-span-2 flex flex-col justify-center items-center'>
           <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center'>
             {currentJieQi}
           </p>
+          {t(`${currentJieQi}.name-py`) !== '' ? (
+            <p className='italic'>{t(`${currentJieQi}.name-py`)}</p>
+          ) : (
+            ''
+          )}
+          {t(`${currentJieQi}.name-py`) !== '' ? (
+            <p className='text-md font-bold'>
+              {t(`${currentJieQi}.name-trans`)}
+            </p>
+          ) : (
+            ''
+          )}
         </div>
 
         <div className='col-span-1 flex items-end justify-center pb-10'>

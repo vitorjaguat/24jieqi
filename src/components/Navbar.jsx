@@ -34,7 +34,7 @@ export default function Navbar() {
           : 'fixed z-10 w-screen h-16 ease-in duration-200'
       }
     >
-      <div className='flex justify-between items-center w-full h-full px-2'>
+      <div className='flex justify-between items-center w-full h-full px-5'>
         <Link href='/' scroll={false}>
           {/* <Image
             src='/../public/assets/logoH2.png'

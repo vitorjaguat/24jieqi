@@ -20,8 +20,8 @@ export default function Main({ jieqi }) {
       style={{ backgroundColor: bgColor }}
     >
       <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col bg-[#00000020] rounded-xl'>
-        <div className='w-full h-full grid grid-cols-3'>
-          <div className='col-span-2 flex flex-col justify-center items-center'>
+        <div className='w-full h-full flex flex-col md:grid md:grid-cols-3'>
+          <div className='h-full md:h-auto md:col-span-2 flex flex-col justify-center items-center'>
             <p className='text-[120px] md:text-[150px] lg:text-[200px] font-mashanzhang'>
               {jieqi}
             </p>
@@ -31,13 +31,13 @@ export default function Main({ jieqi }) {
               ''
             )}
             {t(`${jieqi}.name-py`) !== '' ? (
-              <p className='md:text-lg'>{t(`${jieqi}.name-trans`)}</p>
+              <p className='text-md font-bold'>{t(`${jieqi}.name-trans`)}</p>
             ) : (
               ''
             )}
           </div>
 
-          <div className='h-full col-span-1 flex flex-col items-center justify-end py-10 mx-auto'>
+          <div className='md:h-full md:col-span-1 flex flex-col items-center justify-end py-10 mx-auto'>
             <ColorGrid current={jieqi} />
           </div>
 
