@@ -13,6 +13,7 @@
     "colors": "Colors"
   },
   "poem": {
-    "poem": "Poem"
+    "poem": "Poem",
+    "text": "Muitos poemas "
   }
 }

@@ -1,6 +1,8 @@
 {
   "立春": {
     "name": "立春",
+    "name-py": "lìchūn",
+    "name-trans": "Início da Primavera",
     "text": {
       "p1": "立春是二十四节气中第一个节气，标志着春天的开始。这时，太阳到达黄经315°。“立”是“开始”的意思；“春”代表着温暖、生长。春天是生长、耕耘、播种的季节。到了立春，人们能很明显地感受到白昼变长，太阳暖和了。这个节气是一年的转折点。",
       "p2": "立春时节养生着重要顺应春天阳气生发、万物始生的特点。春属木，与肝相应。在春季养生方面，主要是护肝，食品则应选择辛湿发散的大枣、豆豉、葱、花生等，可以达到很好的食疗效果。立春的饮食药膳应以“升补”为主，适宜的膳食有首乌肝片、虾仁韭菜、珍珠三鲜汤等，食之有补肝肾、益精血、乌发明目、温中益气的功效。"
@@ -85,6 +87,8 @@
   },
   "雨水": {
     "name": "雨水",
+    "name-py": "yǔshuǐ",
+    "name-trans": "Águas de Chuva",
     "text": {
       "p1": "雨水是二十四节气中的第二个节气，也是春季的第二个节气。这时，太阳到达黄经330°。降水开始，雨量渐增。在黄河流域，雨水之前天气寒冷，雪花纷飞。雨水之后气温一般可升至0摄氏度以上。降雪逐渐变少，而降雨逐渐增多。",
       "p2": "五行中肝属木，味为酸，脾属土，味为甘，木胜土。所以，雨水时节的饮食应少吃酸味，多吃甜味，以养脾脏之气。可选择香椿、百合、豌豆苗、茼蒿、荠菜、春笋、山药、藕、芋头、萝卜、荸荠、甘蔗等。"
@@ -164,6 +168,8 @@
   },
   "惊蛰": {
     "name": "惊蛰",
+    "name-py": "jīngzhé",
+    "name-trans": "Despertar dos Insetos",
     "text": {
       "p1": "惊蛰是二十四节气中的第三个节气，也是春季的第三个节气。这时，太阳到达黄经345°。春雷乍动，惊醒了蛰伏在土中冬眠的动物。气温回升开始加快，黄河流域大部分地区已经逐渐响起了春雷。到了惊蛰，中国大部分地区进入春耕繁忙的季节。",
       "p2": "惊蛰的饮食原则是保阴潜阳，多吃清淡食物，也可以适当选用补品，以提高人体的免疫力，还可以适当食用一些具有补益正气作用的食疗粥来增强体质。还应多吃清淡食物，如糯米、芝麻、甘蔗等。一般选服具有调血补气、健脾补肾、养肺补脑的补品。"
@@ -243,6 +249,8 @@
   },
   "春分": {
     "name": "春分",
+    "name-py": "chūnfēn",
+    "name-trans": "Equinócio de Primavera",
     "text": {
       "p1": "",
       "p2": ""
@@ -322,6 +330,8 @@
   },
   "清明": {
     "name": "清明",
+    "name-py": "qīngmíng",
+    "name-trans": "Claro e Brilhante",
     "text": {
       "p1": "",
       "p2": ""
@@ -401,6 +411,8 @@
   },
   "谷雨": {
     "name": "谷雨",
+    "name-py": "gǔyǔ",
+    "name-trans": "Chuva de Grãos",
     "text": {
       "p1": "",
       "p2": ""
@@ -480,6 +492,8 @@
   },
   "立夏": {
     "name": "立夏",
+    "name-py": "lìxià",
+    "name-trans": "Início do Verão",
     "text": {
       "p1": "",
       "p2": ""
@@ -559,6 +573,8 @@
   },
   "小满": {
     "name": "小满",
+    "name-py": "xiǎomǎn",
+    "name-trans": "Pequena Abundância",
     "text": {
       "p1": "",
       "p2": ""
@@ -638,6 +654,8 @@
   },
   "芒种": {
     "name": "芒种",
+    "name-py": "mángzhòng",
+    "name-trans": "Grãos na Espiga",
     "text": {
       "p1": "",
       "p2": ""
@@ -717,6 +735,8 @@
   },
   "夏至": {
     "name": "夏至",
+    "name-py": "xiàzhì",
+    "name-trans": "Solstício de Verão",
     "text": {
       "p1": "",
       "p2": ""
@@ -796,6 +816,8 @@
   },
   "小暑": {
     "name": "小暑",
+    "name-py": "xiǎoshǔ",
+    "name-trans": "Calor Menor",
     "text": {
       "p1": "",
       "p2": ""
@@ -875,6 +897,8 @@
   },
   "大暑": {
     "name": "大暑",
+    "name-py": "dàshǔ",
+    "name-trans": "Calor Maior",
     "text": {
       "p1": "",
       "p2": ""
@@ -954,6 +978,8 @@
   },
   "立秋": {
     "name": "立秋",
+    "name-py": "lìqiū",
+    "name-trans": "Início do Outono",
     "text": {
       "p1": "",
       "p2": ""
@@ -1033,6 +1059,8 @@
   },
   "处暑": {
     "name": "处暑",
+    "name-py": "chǔshǔ",
+    "name-trans": "Limite do Calor",
     "text": {
       "p1": "",
       "p2": ""
@@ -1112,6 +1140,8 @@
   },
   "白露": {
     "name": "白露",
+    "name-py": "báilù",
+    "name-trans": "Orvalho Branco",
     "text": {
       "p1": "",
       "p2": ""
@@ -1191,6 +1221,8 @@
   },
   "秋分": {
     "name": "秋分",
+    "name-py": "qiūfēn",
+    "name-trans": "Equinócio de Outono",
     "text": {
       "p1": "",
       "p2": ""
@@ -1270,6 +1302,8 @@
   },
   "寒露": {
     "name": "寒露",
+    "name-py": "hánlù",
+    "name-trans": "Orvalho Frio",
     "text": {
       "p1": "",
       "p2": ""
@@ -1349,6 +1383,8 @@
   },
   "霜降": {
     "name": "霜降",
+    "name-py": "shuāngjiàng",
+    "name-trans": "Descida da Geada",
     "text": {
       "p1": "",
       "p2": ""
@@ -1428,6 +1464,8 @@
   },
   "立冬": {
     "name": "立冬",
+    "name-py": "lìdōng",
+    "name-trans": "Início do Inverno",
     "text": {
       "p1": "",
       "p2": ""
@@ -1507,6 +1545,8 @@
   },
   "小雪": {
     "name": "小雪",
+    "name-py": "xiǎoxuě",
+    "name-trans": "Neve Menor",
     "text": {
       "p1": "",
       "p2": ""
@@ -1586,6 +1626,8 @@
   },
   "大雪": {
     "name": "大雪",
+    "name-py": "dàxuě",
+    "name-trans": "Neve Maior",
     "text": {
       "p1": "",
       "p2": ""
@@ -1665,6 +1707,8 @@
   },
   "冬至": {
     "name": "冬至",
+    "name-py": "dōngzhì",
+    "name-trans": "Solstício de Inverno",
     "text": {
       "p1": "",
       "p2": ""
@@ -1744,6 +1788,8 @@
   },
   "小寒": {
     "name": "小寒",
+    "name-py": "xiǎohán",
+    "name-trans": "Frio Menor",
     "text": {
       "p1": "",
       "p2": ""
@@ -1823,6 +1869,8 @@
   },
   "大寒": {
     "name": "大寒",
+    "name-py": "dàhán",
+    "name-trans": "Frio Maior",
     "text": {
       "p1": "",
       "p2": ""
