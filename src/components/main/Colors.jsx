@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { GiGinkgoLeaf } from 'react-icons/gi';
+import { SiLeaflet } from 'react-icons/si';
 
 export default function Colors({ current }) {
   const { t } = useTranslation('terms');
@@ -51,11 +52,12 @@ export default function Colors({ current }) {
         >
           {hexArr.map((hex, i) => (
             <div key={i} className='w-full flex justify-center'>
-              <div className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] bg-slate-50'>
-                <div
+              <div className='m-2 p-2 flex justify-between rounded-lg items-center w-[150px] bg-slate-50'>
+                {/* <div
                   className='w-10 h-10 rounded-full'
                   style={{ backgroundColor: hex }}
-                />
+                /> */}
+                <SiLeaflet color={hex} size={35} />
                 <div>
                   <p className='ml-4'>{nameArr[i]}</p>
                 </div>

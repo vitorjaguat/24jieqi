@@ -24,8 +24,6 @@ export default function Main({
       style={{ backgroundColor: bgColor }}
     >
       <div className='w-full md:max-w-[1200px] h-[80%] flex-col bg-[#00000020] grid grid-cols-4'>
-        {/* <div className='  absolute top-[10%] left-[5%] bottom-[10%] right-[5%] opacity-20 bg-green-800 rounded-xl'></div> */}
-
         <div className='col-span-1 flex flex-col items-center justify-between py-10'>
           <div className=''>
             <ColorGrid current={current} />
@@ -38,7 +36,7 @@ export default function Main({
         </div>
 
         <div className='col-span-2 flex flex-col justify-center items-center'>
-          <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center'>
+          <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center leading-tight sm:leading-normal'>
             {currentJieQi}
           </p>
           {t(`${currentJieQi}.name-py`) !== '' ? (
