@@ -23,20 +23,15 @@ export default function Main({
       className={'w-screen h-screen flex justify-center items-center '}
       style={{ backgroundColor: bgColor }}
     >
-      <div className='w-full md:max-w-[1200px] h-[80%] flex-col bg-[#00000020] grid grid-cols-4'>
-        <div className='col-span-1 flex flex-col items-center justify-between py-10'>
+      <div className='w-full md:max-w-[1200px] h-[80%] bg-[#00000020] grid grid-rows-4 px-6 md:px-16'>
+        <div className='row-span-1 flex items-center justify-center py-10'>
           <div className=''>
             <ColorGrid current={current} />
           </div>
-
-          <div className='pl-2 md:pl-0 flex flex-col text-sm md:text-md'>
-            <p>{t2('main.previous')}</p>
-            <p>{prevSentence}</p>
-          </div>
         </div>
 
-        <div className='col-span-2 flex flex-col justify-center items-center'>
-          <p className='text-[100px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center leading-tight sm:leading-normal'>
+        <div className='row-span-2 flex flex-col justify-center items-center'>
+          <p className='text-[110px] md:text-[150px] lg:text-[200px] font-mashanzhang text-center'>
             {currentJieQi}
           </p>
           {t(`${currentJieQi}.name-py`) !== '' ? (
@@ -53,7 +48,11 @@ export default function Main({
           )}
         </div>
 
-        <div className='col-span-1 flex items-end justify-center pb-10'>
+        <div className='w-full h-full row-span-1 flex items-center justify-between pt-6 md:pt-0'>
+          <div className='pl-2 md:pl-0 flex flex-col text-sm md:text-md'>
+            <p>{t2('main.previous')}</p>
+            <p>{prevSentence}</p>
+          </div>
           <div className='pr-2 md:pr-0 flex flex-col justify-center items-end text-sm md:text-md'>
             <p>{t2('main.next')}</p>
             <p>{nextSentence}</p>
