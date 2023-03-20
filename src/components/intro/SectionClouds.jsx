@@ -292,19 +292,26 @@ export default function SectionClouds({ current }) {
           </div>
           <div className='w-full'>
             <div className='p-10 pl-20'>
-              <h3 className='font-bold pb-4'>Lorem, ipsum.</h3>
+              <h3 className='font-bold pb-4'>Os 24 Termos Solares</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                molestias sequi, voluptatum necessitatibus dolor assumenda
-                explicabo nam consequatur, eum quo facere voluptatibus aliquam
-                sunt repudiandae odit? Tempore ea dicta doloremque.
+                Em cada ano, o mundo inteiro é influenciado pelo ciclo das 4
+                Estações. Há milênios, os chineses dividem cada estação em 6
+                períodos. Esses períodos se chamam "termos solares", e aqui você
+                vai conhecê-los um a um.
               </p>
-              <h3 className='font-bold pb-4 pt-8'>Lorem, ipsum.</h3>
+              <h3 className='font-bold pb-4 pt-8'>Cultura, natureza e saúde</h3>
               <p>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vitae
-                molestias sequi, voluptatum necessitatibus dolor assumenda
-                explicabo nam consequatur, eum quo facere voluptatibus aliquam
-                sunt repudiandae odit? Tempore ea dicta doloremque.
+                Os termos solares têm nomes e características próprias. Eles são
+                descritos em poemas e outras manifestações artísticas, e
+                influenciam a paisagem, a vida cotidiana e os hábitos de
+                preservação da saúde.
+              </p>
+              <h3 className='font-bold pb-4 pt-8'>Navegue e oriente-se</h3>
+              <p>
+                Aqui você pode acompanhar a passagem dos Termos Solares e ler
+                mais sobre cada um desses períodos. Você será levado à descrição
+                completa do período atual e poderá observar o mundo com outros
+                olhos.
               </p>
             </div>
           </div>

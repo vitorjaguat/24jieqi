@@ -20,10 +20,10 @@ export default function Main({
 
   return (
     <div
-      className={'w-screen h-screen flex justify-center items-center '}
+      className='py-16 w-screen h-screen flex justify-center items-center '
       style={{ backgroundColor: bgColor }}
     >
-      <div className='w-full md:max-w-[1200px] h-[80%] bg-[#00000020] grid grid-rows-4 px-6 md:px-16'>
+      <div className='w-full md:max-w-[1200px] bg-[#00000010] grid grid-rows-4 px-6 md:px-16'>
         <div className='row-span-1 flex items-center justify-center py-10'>
           <div className=''>
             <ColorGrid current={current} />

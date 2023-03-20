@@ -32,56 +32,55 @@ export default function Poem({ current }) {
             paisagem, muitas vezes entrelaçadas com mudanças subjetivas e também
             nos hábitos cotidianos, associadas à chegada de um novo período.
             Natureza e cultura são descritas em versos, com o poder de síntese
-            particulares da língua chinesa.
+            particulares da língua chinesa e com o estilo singular de cada
+            autor.
           </p>
           <p className='pb-4'>
             No poema abaixo, temos um exemplo de representação literária do
             termo solar {current}.
           </p>
-          <div className=''>
-            <p>
-              <span className='font-bold'>Título: </span>
-              <span>{t(`${current}.poem.title-trans`)}</span>
-            </p>
-            <p>
-              <span className='font-bold'>Título original: </span>
-              <span>{t(`${current}.poem.title`)}</span>
-            </p>
-            <p>
-              <span className='font-bold'>Autor: </span>
-              <span>
-                {t(`${current}.poem.author-trans`)}{' '}
-                {t(`${current}.poem.author`)}
-              </span>
-            </p>
-            <p>
-              <span className='font-bold'>Período histórico: </span>
-              <span>{t(`${current}.poem.date`)}</span>
-            </p>
+          <div className='border mt-10 w-fit py-2 px-4 gap-x-2 md:gap-x-6 rounded-md grid grid-cols-2 bg-[#FFFFFF50] mx-auto text-sm md:text-base'>
+            <span>Título: </span>
+            <span className='font-bold'>
+              {t(`${current}.poem.title-trans`)}
+            </span>
+
+            <span>Título original: </span>
+            <span className='font-bold'>{t(`${current}.poem.title`)}</span>
+
+            <span>Autor: </span>
+            <span className='font-bold'>
+              {t(`${current}.poem.author-trans`)} {t(`${current}.poem.author`)}
+            </span>
+
+            <span>Período histórico: </span>
+            <span className='font-bold'>{t(`${current}.poem.date`)}</span>
           </div>
         </div>
-        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
-          <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>
-            <div className='w-full md:h-[70%] bg-green-100 flex  justify-center items-center px-10 pt-16 md:p-20 md:pl-0 overflow-hidden'>
-              <div className='flex flex-row-reverse justify-center items-center'>
-                {poemArr.map((p, i) => (
-                  <p
-                    key={i}
-                    className='font-mashanzhang text-xl'
-                    style={{ writingMode: 'vertical-rl' }}
-                  >
-                    {p}
-                  </p>
-                ))}
+        <div className='p-10'>
+          <div className='md:grid md:grid-cols-5 md:w-full md:h-full items-center md:px-20 bg-gradient-to-b md:bg-gradient-to-l from-[#ffffff95] md:from-[#ffffff] to-transparent'>
+            <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>
+              <div className='w-full md:h-[70%] flex  justify-center items-center px-10 pt-16 md:p-20 md:pl-0 overflow-hidden'>
+                <div className='flex flex-row-reverse justify-center items-center'>
+                  {poemArr.map((p, i) => (
+                    <p
+                      key={i}
+                      className='font-mashanzhang text-xl'
+                      style={{ writingMode: 'vertical-rl' }}
+                    >
+                      {p}
+                    </p>
+                  ))}
+                </div>
               </div>
             </div>
-          </div>
 
-          <div className='md:w-full md:col-span-3 flex justify-center items-center'>
-            <div className='w-full h-full bg-green-100 '>
-              <div className='p-6 py-16 md:max-w-[700px] mx-auto md:px-20 bg-gradient-to-t md:bg-gradient-to-l from-[#ffffff95] md:from-[#ffffff] to-transparent'>
-                <div className=''>
-                  <p className=''>{t(`${current}.poem.now`)}</p>
+            <div className='md:w-full md:col-span-3 flex justify-center items-center'>
+              <div className='w-full h-full'>
+                <div className='p-6 py-16 md:max-w-[700px] mx-auto md:px-20'>
+                  <div className=''>
+                    <p className=''>{t(`${current}.poem.now`)}</p>
+                  </div>
                 </div>
               </div>
             </div>

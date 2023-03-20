@@ -62,7 +62,7 @@ const LanguageToggle = () => {
         scroll={false}
       >
         <div
-          className='mr-1 font-thin text-xs cursor-pointer px-1 hover:border-b'
+          className='mr-1 text-xs cursor-pointer px-1 hover:border-b'
           // onClick={() => handleLanguageChange('zh')}
         >
           中

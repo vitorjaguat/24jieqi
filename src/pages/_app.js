@@ -4,6 +4,7 @@ import { Bona_Nova } from '@next/font/google';
 import '@/styles/globals.css';
 import Navbar from '@/components/Navbar';
 import { appWithTranslation } from 'next-i18next';
+import Footer from '@/components/Footer';
 
 const mashanzhang = Ma_Shan_Zheng({
   subsets: ['latin'],
@@ -28,6 +29,7 @@ const App = ({ Component, pageProps }) => {
     >
       <Navbar />
       <Component {...pageProps} key={router.asPath} />
+      <Footer />
     </main>
   );
 };

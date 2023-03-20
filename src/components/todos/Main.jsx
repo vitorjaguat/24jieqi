@@ -16,10 +16,10 @@ export default function Main({ jieqi }) {
 
   return (
     <div
-      className={'w-screen h-screen flex justify-center items-center '}
+      className='py-16 w-screen h-screen flex justify-center items-center '
       style={{ backgroundColor: bgColor }}
     >
-      <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col bg-[#00000020] rounded-xl'>
+      <div className='h-full w-[90%] md:max-w-[1200px] flex flex-col bg-[#00000010] rounded-xl'>
         <div className='w-full h-full flex flex-col md:grid md:grid-cols-3'>
           <div className='h-full md:h-auto md:col-span-2 flex flex-col justify-center items-center'>
             <p className='text-[120px] md:text-[150px] lg:text-[200px] font-mashanzhang'>
