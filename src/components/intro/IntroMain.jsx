@@ -36,8 +36,8 @@ export default function IntroMain({
                 períodos
               </div>
               <div className='p-2 w-full'>
-                Esses períodos se chamam "termos solares", e aqui você vai
-                conhecer um a um
+                Esses períodos se chamam &quot;termos solares&quot;, e aqui você
+                vai conhecer um a um
               </div>
             </div>
           </div>

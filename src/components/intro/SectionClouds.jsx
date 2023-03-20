@@ -296,8 +296,8 @@ export default function SectionClouds({ current }) {
               <p>
                 Em cada ano, o mundo inteiro é influenciado pelo ciclo das 4
                 Estações. Há milênios, os chineses dividem cada estação em 6
-                períodos. Esses períodos se chamam "termos solares", e aqui você
-                vai conhecê-los um a um.
+                períodos. Esses períodos se chamam &quot;termos solares&quot;, e
+                aqui você vai conhecê-los um a um.
               </p>
               <h3 className='font-bold pb-4 pt-8'>Cultura, natureza e saúde</h3>
               <p>
