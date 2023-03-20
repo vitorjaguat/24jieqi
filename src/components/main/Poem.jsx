@@ -25,12 +25,40 @@ export default function Poem({ current }) {
           <h1 className='text-5xl text-center pb-10 font-bold font-mashanzhang tracking-wider'>
             {t1('poem.poem')}
           </h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum
-            delectus est enim et mollitia, accusantium atque iste quas
-            necessitatibus, iusto labore corporis esse magnam ad cupiditate
-            expedita facilis laudantium laborum.
+          <p className='pb-4'>
+            Ao longo de muitas dinastias, os poetas chineses deixaram escritos
+            textos em que descrevem os fenômenos naturais que costumam acontecer
+            em cada termo solar. Nesses poemas, os autores falam das mudanças na
+            paisagem, muitas vezes entrelaçadas com mudanças subjetivas e também
+            nos hábitos cotidianos, associadas à chegada de um novo período.
+            Natureza e cultura são descritas em versos, com o poder de síntese
+            particulares da língua chinesa.
           </p>
+          <p className='pb-4'>
+            No poema abaixo, temos um exemplo de representação literária do
+            termo solar {current}.
+          </p>
+          <div className=''>
+            <p>
+              <span className='font-bold'>Título: </span>
+              <span>{t(`${current}.poem.title-trans`)}</span>
+            </p>
+            <p>
+              <span className='font-bold'>Título original: </span>
+              <span>{t(`${current}.poem.title`)}</span>
+            </p>
+            <p>
+              <span className='font-bold'>Autor: </span>
+              <span>
+                {t(`${current}.poem.author-trans`)}{' '}
+                {t(`${current}.poem.author`)}
+              </span>
+            </p>
+            <p>
+              <span className='font-bold'>Período histórico: </span>
+              <span>{t(`${current}.poem.date`)}</span>
+            </p>
+          </div>
         </div>
         <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
           <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>

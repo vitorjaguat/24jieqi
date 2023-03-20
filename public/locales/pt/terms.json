@@ -9,7 +9,10 @@
     },
     "poem": {
       "title": "立春",
-      "author": "【宋朝】白玉蟾",
+      "title-trans": "Início da Primavera",
+      "author": "白玉蟾",
+      "author-trans": "Bai Yuchan",
+      "date": "Dinastia Song",
       "text": {
         "p1": "东风吹散梅梢雪，",
         "p2": "一夜挽回天下春。",
