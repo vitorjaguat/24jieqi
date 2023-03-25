@@ -1,22 +1,35 @@
 import { Solar, Lunar } from 'lunar-javascript';
 import Link from 'next/link';
 import { useEffect, useState } from 'react';
+import { BiSkipPrevious, BiSkipNext } from 'react-icons/bi';
+import { GiFlowerPot } from 'react-icons/gi';
 import { GrPrevious, GrNext } from 'react-icons/gr';
-import Imagem from '../main/Imagem';
-import IntroMain from './IntroMain';
-import IntroMain2 from './IntroMain2';
-import Poem from '../main/Poem';
-import IntroText from './IntroText';
-import BannerImage from '../main/BannerImage';
-import BannerClouds from './BannerClouds';
-import { ParallaxProvider } from 'react-scroll-parallax';
-import BannerClouds2 from './SectionClouds';
+import Imagem from '../components/main/Imagem';
+import Main from '../components/main/Main';
+import Poem from '../components/main/Poem';
+import Text from '../components/main/Text';
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations';
+import { useTranslation } from 'next-i18next';
+import Colors from '@/components/main/Colors';
 
-export default function Intro() {
+export default function JieQi_() {
+  const { t } = useTranslation('terms');
+
   const [baseDate, setBaseDate] = useState(null);
   const [currentJieQi, setCurrentJieQi] = useState(null);
   const [prevSentence, setPrevSentence] = useState('');
   const [nextSentence, setNextSentence] = useState('');
+  const [current, setCurrent] = useState(currentJieQi ? currentJieQi : '惊蛰');
+  useEffect(() => {
+    setCurrent((prev) => currentJieQi);
+  }, [currentJieQi]);
+  //timezone -> China timezone helper:
+  //   const intlDateObj = new Intl.DateTimeFormat('en', {
+  //     timeZone: 'Asia/Shanghai',
+  //   });
+  //   const timezoneHelper = (date) => {
+  //     intlDateObj.format(date);
+  //   };
 
   const prevJieQiHelper = (date) => {
     if (!date) return;
@@ -78,29 +91,43 @@ export default function Intro() {
   //   console.log(currentJieQi.getName());
 
   return (
-    <ParallaxProvider>
+    <div className='w-screen'>
       <div className='w-screen'>
-        <div className='w-screen bg-green-200'>
-          {/* <IntroMain /> */}
-          <IntroMain2 />
-          <BannerClouds2 />
+        {/* skip previous2 */}
+        <div
+          className='fixed w-[4%] top-[48%] left-[2%] flex cursor-pointer'
+          onClick={() => goToPrevJieQi()}
+        >
+          <GrPrevious size={25} />
+        </div>
+        {/* <p>{t(`${current}.colors.one.hex`)}</p> */}
+        <Main
+          currentJieQi={currentJieQi}
+          prevSentence={prevSentence}
+          nextSentence={nextSentence}
+          current={current}
+        />
 
-          <IntroText />
-
-          {/* <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100'>
-            <div className='md:w-full md:col-span-3'>
-              <IntroText />
-            </div>
-            <div className='md:w-full md:col-span-2'>
-              <Imagem />
-            </div>
+        <div className='md:grid md:grid-cols-5 md:w-full md:h-full md:bg-green-100 items-center'>
+          <div className='md:w-full md:col-span-3 flex justify-center items-center'>
+            <Text current={current} />
           </div>
+          <div className='md:w-full md:h-full md:col-span-2 flex justify-center items-center'>
+            <Imagem current={current} />
+          </div>
+        </div>
 
-          <Poem /> */}
+        <Colors current={current} />
+        <Poem current={current} />
 
-          <BannerImage current='雨水' />
+        {/* skip next2 */}
+        <div
+          className='fixed w-[4%] top-[48%] right-[2%] cursor-pointer flex justify-end'
+          onClick={() => goToNextJieQi()}
+        >
+          <GrNext size={25} />
         </div>
       </div>
-    </ParallaxProvider>
+    </div>
   );
 }

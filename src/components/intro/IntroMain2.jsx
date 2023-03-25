@@ -270,7 +270,13 @@ export default function SectionClouds({ current }) {
   );
 
   return (
-    <div className='pt-[60px] bg-slate-200 overflow-hidden'>
+    <div
+      className='w-screen h-screen pt-[60px] bg-slate-200 overflow-hidden'
+      style={{
+        background:
+          'linear-gradient(180deg, #ffffff, #f5fdff, #ebfbff, #e1f9ff, #d6f7ff, #cbf4ff, #c0f2ff, #b4f0ff)',
+      }}
+    >
       <div className='flex flex-col md:flex-row justify-between md:w-[1240px] mx-auto'>
         <div
           className='w-full flex flex-col justify-center items-center pt-20 overflow-hidden mb-10'
@@ -288,12 +294,11 @@ export default function SectionClouds({ current }) {
         </div>
         <div className='w-full'>
           <div className='p-10 pl-20'>
-            <h3 className='font-bold pb-4'>Os 24 Termos Solares</h3>
-            <p>
-              Em cada ano, o mundo inteiro é influenciado pelo ciclo das 4
-              Estações. Há milênios, os chineses dividem cada estação em 6
-              períodos. Esses períodos se chamam &quot;termos solares&quot;, e
-              aqui você vai conhecê-los um a um.
+            <p
+              className='text-[80px] md:text-[110px] lg:text-[130px] font-mashanzhang text-center'
+              // style={{ writingMode: 'vertical-rl' }}
+            >
+              24节气
             </p>
             <h3 className='font-bold pb-4 pt-8'>Cultura, natureza e saúde</h3>
             <p>
@@ -301,13 +306,6 @@ export default function SectionClouds({ current }) {
               descritos em poemas e outras manifestações artísticas, e
               influenciam a paisagem, a vida cotidiana e os hábitos de
               preservação da saúde.
-            </p>
-            <h3 className='font-bold pb-4 pt-8'>Navegue e oriente-se</h3>
-            <p>
-              Aqui você pode acompanhar a passagem dos Termos Solares e ler mais
-              sobre cada um desses períodos. Você será levado à descrição
-              completa do período atual e poderá observar o mundo com outros
-              olhos.
             </p>
           </div>
         </div>
@@ -318,11 +316,12 @@ export default function SectionClouds({ current }) {
           paused={false}
           options={{
             // height: 20,
+            height: 30,
             amplitude: 40,
             speed: 0.15,
             points: 5,
           }}
-          className='h-[290px]'
+          className='h-[180px] absolute bottom-0'
         />
       </div>
     </div>
