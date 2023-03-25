@@ -82,7 +82,7 @@ export default function Intro() {
       <div className='w-screen'>
         <div className='w-screen bg-green-200'>
           {/* <IntroMain /> */}
-          <IntroMain2 />
+          <IntroMain />
           <BannerClouds2 />
 
           <IntroText />
