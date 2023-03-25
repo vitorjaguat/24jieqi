@@ -23,7 +23,7 @@ export default function Colors({ current }) {
     setNameArr([...nameData]);
   }, [current, setHexArr, setNameArr]);
 
-  console.log(hexArr, nameArr);
+  // console.log(hexArr, nameArr);
 
   return (
     <div id='colors' className='w-full bg-slate-200 py-20'>

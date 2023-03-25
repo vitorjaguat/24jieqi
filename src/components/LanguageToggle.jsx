@@ -5,7 +5,7 @@ import Link from 'next/link';
 const LanguageToggle = () => {
   const { i18n } = useTranslation();
   const router = useRouter();
-  console.log(router.query);
+  // console.log(router.query);
 
   // const handleLanguageChange = (locale) => {
   //   i18n.changeLanguage(locale); //changing the language
