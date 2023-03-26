@@ -159,8 +159,8 @@ export default function JieQi_() {
               observação dos fenômenos naturais daquela região do planeta. Há
               milênios, quando os 24 períodos foram criados, os chineses não
               tinham uma ideia completa da vastidão e diversidade das regiões da
-              Terra. Para fins didáticos, esse site "converte" o Termo Solar
-              atual na China (Hemisfério Norte) para o Termo Solar
+              Terra. Para fins didáticos, esse site &quot;converte&quot; o Termo
+              Solar atual na China (Hemisfério Norte) para o Termo Solar
               correspondente no Hemisfério Sul. Dependendo de sua região, pode
               ser que as características citadas não correspondam perfeitamente
               com o clima e fenômenos naturais da sua região. Mesmo assim, vale
