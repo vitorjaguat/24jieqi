@@ -59,9 +59,9 @@ export default function Todos() {
 
   return (
     <div className='w-screen bg-slate-200 py-16'>
-      <div className='w-full md:max-w-[1000px] mx-auto p-20 bg-[#00000010] rounded-xl'>
+      <div className='w-full md:max-w-[1100px] mx-auto p-20 bg-[#00000010] rounded-xl'>
         <div>
-          <h1 className='text-5xl text-center pb-10 font-bold font-mashanzhang tracking-wider'>
+          <h1 className='text-5xl text-center pb-20 font-bold font-mashanzhang tracking-wider'>
             Os 24 Termos Solares
           </h1>
           <p className='pb-4 text-center'>
@@ -77,11 +77,11 @@ export default function Todos() {
           </p> */}
         </div>
 
-        <div className='flex flex-col md:grid md:grid-flow-col md:grid-rows-6 p-6'>
+        <div className='flex flex-col md:gap-4 md:justify-center items-center md:grid md:grid-flow-col md:grid-rows-6 py-6'>
           {jieqiArr.map((jieqi, i) => (
             <Link key={jieqi} href={`/todos/${jieqi}`}>
               <div
-                className='m-2 p-2 flex justify-between rounded-md items-center w-[150px] hover:scale-105 transition-all duration-300'
+                className='m-2 p-2 flex rounded-md justify-between items-center w-[180px] h-[4.5rem] hover:scale-105 transition-all duration-300'
                 style={{
                   backgroundColor:
                     i <= 5
@@ -94,11 +94,16 @@ export default function Todos() {
                 }}
               >
                 <div
-                  className='w-10 h-10 rounded-full'
+                  className='w-10 shrink-0 h-10 rounded-full'
                   style={{ backgroundColor: colorsArr[i] }}
                 />
                 <div>
-                  <p className='ml-4'>{jieqi}</p>
+                  <p className='ml-4 text-sm text-end font-bold'>{jieqi}</p>
+                  {t(`${jieqi}.name-trans`) && (
+                    <p className='ml-4 text-sm text-end'>
+                      {t(`${jieqi}.name-trans`)}
+                    </p>
+                  )}
                 </div>
               </div>
             </Link>
