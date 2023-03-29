@@ -1,0 +1,121 @@
+.container *,
+.container *::before,
+.container *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  /* display: grid; */
+  /* justify-content: center; */
+  /* align-items: center; */
+  background-color: rgb(56, 112, 146);
+  overflow: visible;
+  /* position: re; */
+}
+.sun {
+  width: 300px;
+  height: 300px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  /* background-color: aqua; */
+}
+.sun *,
+.sun *::before,
+.sun *::after {
+  position: absolute;
+}
+.rings {
+  top: 50%;
+  left: 50%;
+  z-index: 1;
+}
+.rings div::before,
+.rings div::after {
+  content: '';
+  z-index: 2;
+  top: 0;
+  left: 0;
+  height: inherit;
+  width: inherit;
+  background: inherit;
+}
+.rings div::before {
+  transform: rotate(60deg);
+}
+.rings div::after {
+  transform: rotate(-60deg);
+}
+.rings div:nth-child(even) {
+  animation: rotateR 12s infinite linear;
+}
+.rings div:nth-child(odd) {
+  animation: rotateL 12s infinite linear;
+  transform: rotate(15deg);
+}
+.rings div:nth-child(1) {
+  animation-duration: 45s;
+  background: rgba(255, 230, 84, 0.5);
+  width: 200px;
+  height: 200px;
+  margin: -100px 0 0 -100px;
+}
+.rings div:nth-child(2) {
+  animation-duration: 49s;
+  background: rgba(255, 185, 6, 0.5);
+  width: 190px;
+  height: 190px;
+  margin: -95px 0 0 -95px;
+}
+.rings div:nth-child(3) {
+  animation-duration: 56s;
+  background: rgba(255, 130, 5, 0.5);
+  width: 180px;
+  height: 180px;
+  margin: -90px 0 0 -90px;
+}
+.rings div:nth-child(4) {
+  animation-duration: 93s;
+  background: rgba(255, 90, 0, 0.5);
+  width: 170px;
+  height: 170px;
+  margin: -85px 0 0 -85px;
+}
+
+/* animations */
+@keyframes rotateR {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+@keyframes rotateL {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(-360deg);
+  }
+}
+
+/* @keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+} */
+/* @keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 40px #ffde0020,
+      0 0 0 60px #ffde0010, 0 0 0 80px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+      0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
+} */

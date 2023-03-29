@@ -53,7 +53,7 @@ export default function JieQi_() {
     if (hemisphere === 'n') {
       return sentence;
     } else if (hemisphere === 's') {
-      return toSouth(sentence[0] + sentence[1]) + sentence.slice(2, 12);
+      return toSouth(sentence[0] + sentence[1]) + sentence.slice(2, 13);
     }
   };
 
@@ -132,7 +132,8 @@ export default function JieQi_() {
   }, [baseDate]);
 
   //   console.log(currentJieQi.getName());
-  console.log(toSouth(toSouth(current)));
+  // console.log(toSouth(toSouth(current)));
+  console.log(hemisphere);
 
   return (
     <div className='w-screen'>

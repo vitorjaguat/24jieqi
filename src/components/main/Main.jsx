@@ -23,7 +23,7 @@ export default function Main({
       className='py-16 w-screen h-screen flex justify-center items-center '
       style={{ backgroundColor: bgColor }}
     >
-      <div className='w-full md:max-w-[1200px] bg-[#00000010] grid grid-rows-4 px-6 md:px-16'>
+      <div className='w-full h-full md:max-w-[1200px] bg-[#00000010] grid grid-rows-4 px-6 md:px-16'>
         <div className='row-span-1 flex items-center justify-center py-10'>
           <div className=''>
             <ColorGrid current={current} />

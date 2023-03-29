@@ -62,7 +62,7 @@ export default function Navbar() {
               </li>
             </Link>
 
-            <Link href='/about' scroll={false}>
+            <Link href='/sobre' scroll={false}>
               <li className='ml-10 text-sm uppercase hover:border-b '>
                 {t('navbar.about')}
               </li>
@@ -131,7 +131,7 @@ export default function Navbar() {
                 {t('navbar.current-term')}
               </li>
             </Link>
-            <Link href='/about' scroll={false}>
+            <Link href='/sobre' scroll={false}>
               <li onClick={() => setNav(false)} className='py-4 text-sm'>
                 {t('navbar.about')}
               </li>
