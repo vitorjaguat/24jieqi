@@ -27,12 +27,13 @@ export default function SectionClouds({ current }) {
   const svgSun = (
     <svg
       // height='100%'
-      stroke-miterlimit='10'
+
       style={{
         fillRule: 'nonzero',
         clipRule: 'evenodd',
         strokeLinecap: 'round',
         strokeLinejoin: 'round',
+        strokeMiterLimit: '10',
       }}
       // version='1.1'
       viewBox='0 0 800 310'

@@ -1,0 +1,21 @@
+.container *,
+.container *::before,
+.container *::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  background-color: #212131;
+}
+.sun {
+  width: 200px;
+  height: 200px;
+  background-color: #ffde00;
+  border-radius: 50%;
+}

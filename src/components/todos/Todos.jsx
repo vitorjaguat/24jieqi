@@ -2,9 +2,13 @@ import { useEffect, useState } from 'react';
 import { useTranslation } from 'next-i18next';
 import { GiGinkgoLeaf } from 'react-icons/gi';
 import Link from 'next/link';
+import { i18n } from 'next-i18next';
 
 export default function Todos() {
   const { t } = useTranslation('terms');
+  // console.log(i18n.language);
+  const currentLang = i18n.language;
+
   //   const [hexArr, setHexArr] = useState([]);
   //   const [nameArr, setNameArr] = useState([]);
 
@@ -99,7 +103,7 @@ export default function Todos() {
                 />
                 <div>
                   <p className='ml-4 text-sm text-end font-bold'>{jieqi}</p>
-                  {t(`${jieqi}.name-trans`) && (
+                  {currentLang !== 'zh' && (
                     <p className='ml-4 text-sm text-end'>
                       {t(`${jieqi}.name-trans`)}
                     </p>

@@ -11,6 +11,8 @@ import BannerImage from '../main/BannerImage';
 import BannerClouds from './BannerClouds';
 import { ParallaxProvider } from 'react-scroll-parallax';
 import BannerClouds2 from './SectionClouds';
+import Sun1 from './Sun1';
+// import IntroMainP5 from './IntroMainP5';
 
 export default function Intro() {
   const [baseDate, setBaseDate] = useState(null);
@@ -82,7 +84,7 @@ export default function Intro() {
       <div className='w-screen'>
         <div className='w-screen bg-green-200'>
           {/* <IntroMain /> */}
-          <IntroMain />
+          <Sun1 />
           <BannerClouds2 />
 
           <IntroText />
