@@ -83,8 +83,8 @@ export default function Intro() {
     <ParallaxProvider>
       <div className='w-screen'>
         <div className='w-screen bg-green-200'>
-          {/* <IntroMain /> */}
-          <Sun1 />
+          <IntroMain />
+          {/* <Sun1 /> */}
           <BannerClouds2 />
 
           <IntroText />

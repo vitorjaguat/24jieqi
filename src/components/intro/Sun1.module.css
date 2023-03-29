@@ -6,16 +6,37 @@
   box-sizing: border-box;
 }
 .container {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: #212131;
+  background-color: rgb(56, 112, 146);
+  overflow: visible;
 }
 .sun {
-  width: 200px;
-  height: 200px;
+  width: 80px;
+  height: 80px;
   background-color: #ffde00;
   border-radius: 50%;
+  box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  animation: sunrise 3s infinite ease-in-out alternate,
+    rays 2s 2s infinite linear;
+  overflow: visible;
 }
+@keyframes sunrise {
+  0% {
+    box-shadow: none;
+  }
+}
+/* @keyframes rays {
+  0% {
+    box-shadow: 0 0 0 0px #ffde0080, 0 0 0 20px #ffde0040, 0 0 0 40px #ffde0020,
+      0 0 0 60px #ffde0010, 0 0 0 80px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
+  100% {
+    box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
+      0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+  }
+} */

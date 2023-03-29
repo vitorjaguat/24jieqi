@@ -1,5 +1,7 @@
 // import mainImg from '../../../public/mainImg.svg';
 
+import Sun1 from './Sun1';
+
 export default function IntroMain({
   currentJieQi,
   prevSentence,
@@ -7,7 +9,7 @@ export default function IntroMain({
 }) {
   return (
     <div className='bg-slate-200'>
-      <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg2.svg')] bg-no-repeat bg-cover ">
+      <div className="w-screen h-screen flex justify-center items-center bg-[url('/mainImg2.svg')] bg-no-repeat bg-cover bg-[56 112 146] ">
         <div className='w-[90%] md:max-w-[1200px] h-[80%] flex flex-col rounded-xl overflow-hidden'>
           <div className='w-full h-full grid grid-cols-12 pt-10'>
             <div
@@ -17,7 +19,8 @@ export default function IntroMain({
               Lorem ipsum dolor sit amet consectetur, adipisicing elit.
             </div>
 
-            <div className='col-span-6 flex justify-center items-center'>
+            <div className='col-span-6 flex justify-center items-center overflow-visible'>
+              <Sun1 />
               <p
                 className='text-[80px] md:text-[110px] lg:text-[130px] font-mashanzhang text-center'
                 // style={{ writingMode: 'vertical-rl' }}

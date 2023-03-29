@@ -85,26 +85,31 @@ export default function Todos() {
           {jieqiArr.map((jieqi, i) => (
             <Link key={jieqi} href={`/todos/${jieqi}`}>
               <div
-                className='m-2 p-2 flex rounded-md justify-between items-center w-[180px] h-[4.5rem] hover:scale-105 transition-all duration-300'
+                className='m-2 p-3 flex rounded-md justify-between items-center w-[190px] h-[5rem] hover:scale-105 transition-all duration-300 bg-slate-500 text-slate-300'
                 style={{
-                  backgroundColor:
+                  borderColor:
                     i <= 5
                       ? '#D4E5D6'
                       : i <= 11
                       ? '#E7CAD3'
                       : i <= 17
-                      ? '#e9e9e9'
+                      ? '#f7f7f7'
                       : '#d1d1d1',
                 }}
               >
                 <div
                   className='w-10 shrink-0 h-10 rounded-full'
-                  style={{ backgroundColor: colorsArr[i] }}
+                  style={{
+                    backgroundColor: colorsArr[i],
+                    boxShadow: `0 0 0 7px ${colorsArr[i]}50`,
+                  }}
                 />
                 <div>
-                  <p className='ml-4 text-sm text-end font-bold'>{jieqi}</p>
+                  <p className='ml-4 mb-1 text-sm text-end font-bold'>
+                    {jieqi}
+                  </p>
                   {currentLang !== 'zh' && (
-                    <p className='ml-4 text-sm text-end'>
+                    <p className='ml-4 text-sm text-end leading-tight'>
                       {t(`${jieqi}.name-trans`)}
                     </p>
                   )}
