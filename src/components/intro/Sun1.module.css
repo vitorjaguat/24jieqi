@@ -11,16 +11,16 @@
   display: grid;
   justify-content: center;
   align-items: center;
-  background-color: rgb(56, 112, 146);
+  background-color: transparent;
   overflow: visible;
 }
 .sun {
-  width: 80px;
-  height: 80px;
+  width: 180px;
+  height: 180px;
   background-color: #ffde00;
   border-radius: 50%;
   box-shadow: 0 0 0 20px #ffde0080, 0 0 0 40px #ffde0040, 0 0 0 60px #ffde0020,
-    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 100px #ffde0010;
+    0 0 0 80px #ffde0010, 0 0 0 100px #ffde0000, 0 0 40px 200px #ffde0010;
   animation: sunrise 3s infinite ease-in-out alternate,
     rays 2s 2s infinite linear;
   overflow: visible;
@@ -28,6 +28,8 @@
 @keyframes sunrise {
   0% {
     box-shadow: none;
+    width: 160px;
+    height: 160px;
   }
 }
 /* @keyframes rays {

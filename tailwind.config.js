@@ -6,6 +6,7 @@ module.exports = {
       fontFamily: {
         mashanzhang: ['var(--mashanzhang-font)'],
         bonanova: ['var(--bonanova-font)'],
+        raleway: ['var(--raleway-font)'],
       },
     },
   },

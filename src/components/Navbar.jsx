@@ -35,41 +35,33 @@ export default function Navbar() {
       }
     >
       <div className='flex justify-between items-center w-full h-full px-5'>
-        <Link href='/' scroll={false}>
-          {/* <Image
-            src='/../public/assets/logoH2.png'
-            alt='logo'
-            width={50}
-            height={50}
-          /> */}
-          <p className='font-bold text-orange-900'>24节气</p>
-        </Link>
-        <div className='hidden md:block'>
+        {/* <Link href='/' scroll={false}>
+          <p className='font-bonanova font-bold text-orange-900'>24节气</p>
+        </Link> */}
+        <div className='hidden md:block text-[13px]'>
           <ul className='hidden md:flex'>
             <Link href='/' scroll={false}>
-              <li className='text-sm uppercase hover:border-b '>
-                {t('navbar.home')}
-              </li>
+              <li className='uppercase hover:border-b '>{t('navbar.home')}</li>
             </Link>
             <Link href='/todos' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 uppercase hover:border-b '>
                 {t('navbar.solar-terms')}
               </li>
             </Link>
             <Link href='/atual' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 uppercase hover:border-b '>
                 {t('navbar.current-term')}
               </li>
             </Link>
 
             <Link href='/sobre' scroll={false}>
-              <li className='ml-10 text-sm uppercase hover:border-b '>
+              <li className='ml-10 uppercase hover:border-b '>
                 {t('navbar.about')}
               </li>
             </Link>
           </ul>
         </div>
-        <div className='text-sm uppercase'>
+        <div className='uppercase'>
           <LanguageToggle />
         </div>
         <div onClick={handleNav} className='md:hidden text-orange-900'>

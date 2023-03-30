@@ -4,6 +4,8 @@ import IntroMain from '@/components/intro/IntroMain';
 import Todos from '@/components/todos/Todos';
 import SunSquares from '@/components/sobre/SunSquares';
 import SunCup from '@/components/sobre/SunCup';
+import Stars from '@/components/sobre/Stars';
+import Cloud from '@/components/sobre/Cloud';
 
 export default function SobrePage() {
   return (
@@ -11,7 +13,9 @@ export default function SobrePage() {
       {/* <Intro /> */}
       {/* <IntroMain /> */}
       {/* <SunSquares /> */}
-      <SunCup />
+      {/* <Stars /> */}
+      {/* <SunCup /> */}
+      <Cloud />
     </div>
   );
 }
